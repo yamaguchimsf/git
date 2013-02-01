@@ -1,0 +1,106 @@
+#!/bin/bash
+
+
+
+###########################################
+#####################################
+# argumant
+############################
+####################################################
+
+ext[0]="~";
+
+size=1;
+
+while getopts loadDth OPT; do
+
+    case $OPT in
+
+        l) ext[$size]=".log"; size=`expr $size + 1`;;
+
+        o) ext[$size]=".o"  ; size=`expr $size + 1`;;
+
+        a) ext[$size]=".aux"; size=`expr $size + 1`;;
+
+        d) ext[$size]=".dvi"; size=`expr $size + 1`;;
+
+        D) ext[$size]=".dat"; size=`expr $size + 1`;;
+
+#        t) ext[$size]=".txt"; size=`expr $size + 1`;;
+
+        h) echo "Usage : clean.sh [OPTION]";
+
+           echo "Remove backup files and ones of extensions specifed by OPTION.";
+
+           echo
+           echo "Options";
+           echo " -l   : Remove *.log";
+
+           echo " -o   : Remove *.o";
+
+           echo " -a   : Remove *.aux";
+
+           echo " -d   : Remove *.dvi";
+
+           echo " -D   : Remove *.dat";
+
+#           echo " -t   : Remove *.txt";
+
+           echo " -h   : Show this help";
+
+           exit 1;;
+
+        \?) echo "Usage : clean.sh [OPTION]";
+
+           echo "Remove backup files and ones of extensions specifed by OPTION.";
+
+           echo
+
+           echo "Options";
+
+           echo " -l   : Remove *.log";
+
+           echo " -o   : Remove *.o";
+
+           echo " -a   : Remove *.aux";
+
+           echo " -d   : Remove *.dvi";
+
+           echo " -D   : Remove *.dat";
+
+#           echo " -t   : Remove *.txt";
+
+           echo " -h   : Show this help";
+
+           exit 1;;
+
+    esac
+
+done
+
+
+#####################################################
+###########################
+# remove backup files
+##############################
+##################################################
+
+i=0;
+
+while [ $i -lt $size ]; do
+
+    t=${ext[$i]};
+
+    for f in `find . -maxdepth 1 -type f -name \*$t`; do
+
+        echo remove $f;
+
+        rm $f;
+
+    done
+
+    i=`expr $i + 1`;
+
+done
+
+

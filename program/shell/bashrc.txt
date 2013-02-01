@@ -1,0 +1,72 @@
+####
+####  Basic Configuration for BASH
+####
+[ -f /etc/bashrc ] && . /etc/bashrc;
+
+
+##  Search paths for executables
+
+PATH="$HOME/bin:/opt/pub/willow/bin:$PATH";
+
+export MALLOC_TRACE=/home/broom/yamaguchi/Dropbox/program/cssampling/trace.txt
+;
+export MALLOC_CHECK_=1
+
+#added by MY
+
+export PATH="$PATH:~/tools/shell/";
+
+
+##  Load settings for readline
+[ -f $HOME/.inputrc ] && export INPUTRC=$HOME/.inputrc;
+
+##  Locale (Language)
+export LESSCHARSET=japanese-euc;
+#export LANG=ja_JP.eucJP
+
+#upper eucJP coment out Jun.10 and change UTF-8
+export LANG=ja_JP.UTF-8;
+
+##  Disable core dump on abnormal termination (e.g. SIGSEGV)
+ulimit -c 0 2>/dev/null || :
+
+##  Only the user can change his/her files by default
+umask 022 2>/dev/null || :
+
+##  Is the shell in the interactive mode?
+if [ -n "$PS1" ]; then
+    ##  Prompt
+    PS1='\h[\W]\$ ' # show basename of the current directory
+#   PS1='\h[\w]\$ ' # show fullpath to the current directory
+
+    ##  Aliases
+    alias ls='ls -1';
+    alias ll='ls -l';
+    alias la='ls -a';
+    alias mv='mv -i';
+    alias cp='cp -i';
+    alias sl='ls';
+    alias dc='cd';
+    alias q='exit';
+#    alias cpz='cp ~/documents/C/PY/PY_zoo_roop/py /home/work/yamaguchi/C/PY/PY_exp/';
+#    alias cpcb='~/tools/shell/cbpm/copy.sh';
+    alias clean='clean.sh';
+#    alias work='cd /home/work/yamaguchi/CBPM/original/exp/';
+    alias work='cd /home/work/yamaguchi/CSS/';
+    alias twork='cd ~/documents/tex/thesis/';
+    alias mkpdf='mkpdf.sh';
+    alias e='emacs -fs &';
+    alias cbpm='cd ~/documents/CBPM/original/';
+    alias ma='~/tools/shell/util/machine.sh -b';
+#    alias exp1='~/tools/shell/exp1.sh';
+#    alias exp2='~/tools/shell/exp2.sh';
+    alias gcc='gcc -lm';
+#    alias sat='cd ~/documents/ruby/sat/SampleSAT/';
+    alias acro='acroread &';
+#    alias pyclean='~/tools/shell/pyclean.sh'
+
+    ##  Don't terminate the shell by Control-D.
+    IGNOREEOF=1024;
+fi
+
+export HISTCONTROL=ignoreboth;

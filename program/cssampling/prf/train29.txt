@@ -1,0 +1,1365 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ks/call  Ks/call  name    
+ 32.82  14605.09 14605.09 4251228793     0.00     0.00  SatProblem::getNsc2(int*, int)
+ 16.95  22147.06  7541.96 7804652310     0.00     0.00  SatProblem::isSatCnj(int*, int)
+ 12.19  27573.63  5426.58 51433164     0.00     0.00  SampleSAT::greedyWalk()
+  4.46  29559.64  1986.01 51424650     0.00     0.00  SampleSAT::randomWalk()
+  4.25  31452.13  1892.49 100136581790     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int)
+  3.96  33214.86  1762.72  2000000     0.00     0.00  SatProblem::initParams()
+  3.12  34605.35  1390.49 37206738303     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned int)
+  2.39  35669.26  1063.91 16742354555     0.00     0.00  SatProblem::getNumVariables()
+  1.75  36450.26   781.00 36392847147     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  1.68  37199.11   748.85 1349994831     0.00     0.00  Random::genrand()
+  1.46  37846.69   647.58 5707471756     0.00     0.00  SatProblem::getClVec(int)
+  1.41  38473.00   626.30 3574914306     0.00     0.00  SatProblem::getFixedClausei(int)
+  1.17  38994.43   521.43 7355527212     0.00     0.00  SatProblem::getClVecSize()
+  1.02  39446.78   452.35 7711704492     0.00     0.00  SatProblem::getVar(int)
+  0.64  39731.64   284.87 2686212400     0.00     0.00  Timer::time()
+  0.63  40012.53   280.88  2000000     0.00     0.00  SliceSampling::sampleX()
+  0.60  40279.90   267.38                             SatProblem::walkIsSat(int*, int)
+  0.49  40498.37   218.47 197036816     0.00     0.00  SatProblem::afterFlip(int*, int)
+  0.43  40687.56   189.19  2000000     0.00     0.00  SatProblem::cpClVector()
+  0.42  40875.20   187.64                             SliceSampling::mcmclearn(int)
+  0.42  41062.51   187.31 1387710363     0.00     0.00  SatProblem::setClause(int, int)
+  0.41  41245.40   182.89 3419520959     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&)
+  0.41  41427.38   181.97 6902328312     0.00     0.00  std::vector<int, std::allocator<int> >::push_back(int const&)
+  0.38  41595.52   168.15 197036816     0.00     0.00  SatProblem::getNumClauses()
+  0.37  41760.14   164.62        1     0.16    43.50  SliceSampling::cdlearn(int)
+  0.37  41924.71   164.57 51405671     0.00     0.00  SatProblem::getNsc1(int*, int)
+  0.37  42088.36   163.64  2000000     0.00     0.00  SampleSAT::init_model()
+  0.35  42243.16   154.81 5564771697     0.00     0.00  std::vector<int, std::allocator<int> >::empty() const
+  0.30  42377.45   134.29 1269804401     0.00     0.00  bool __gnu_cxx::operator==<int const*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&)
+  0.30  42508.77   131.32 19320784896     0.00     0.00  SatProblem::getTheta(int)
+  0.29  42639.96   131.19 2607361016     0.00     0.00  __gnu_cxx::new_allocator<int>::construct(int*, int const&)
+  0.27  42759.95   119.99  2000000     0.00     0.00  SatProblem::initSatCheck(int*)
+  0.26  42877.75   117.80 3419477361     0.00     0.00  std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >)
+  0.26  42993.36   115.61 1269845201     0.00     0.00  std::vector<int, std::allocator<int> >::end() const
+  0.25  43104.92   111.56 1387710363     0.00     0.00  SatProblem::rewriteWL(int, int)
+  0.23  43209.21   104.29 1269845201     0.00     0.00  std::vector<int, std::allocator<int> >::begin() const
+  0.22  43306.89    97.68     1000     0.00     0.00  SliceSampling::readdata(char*)
+  0.20  43397.84    90.95  2000000     0.00     0.00  SatProblem::getNumFixedAtom()
+  0.20  43487.74    89.90 10258475681     0.00     0.00  std::vector<int, std::allocator<int> >::end()
+  0.19  43574.03    86.28  2000000     0.00     0.00  SliceSampling::sampleU()
+  0.18  43653.72    79.69                             SatProblem::getNegWLij(int, int)
+  0.16  43726.72    73.00 1339104197     0.00     0.00  SliceSampling::unitProc(int, int)
+  0.16  43797.51    70.80 17097561197     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const
+  0.15  43863.78    66.27        2     0.03     0.03  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator()
+  0.14  43927.32    63.55 2539690402     0.00     0.00  __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&)
+  0.13  43987.03    59.70 3811679440     0.00     0.00  SatProblem::setWatchIdx(int, int, int)
+  0.12  44040.74    53.71 4604774192     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&)
+  0.11  44089.21    48.48 2539690402     0.00     0.00  __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const
+  0.10  44135.21    45.99 3419477361     0.00     0.00  std::vector<int, std::allocator<int> >::_M_erase_at_end(int*)
+  0.09  44176.29    41.08 3419477361     0.00     0.00  bool __gnu_cxx::operator!=<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&)
+  0.09  44214.71    38.42 2607401816     0.00     0.00  operator new(unsigned int, void*)
+  0.08  44250.58    35.87 5644962127     0.00     0.00  SatProblem::getGrand()
+  0.08  44285.21    34.62 10697563765     0.00     0.00  SatProblem::getCnjSize(int)
+  0.08  44319.39    34.19 7231200399     0.00     0.00  std::vector<int, std::allocator<int> >::begin()
+  0.05  44341.09    21.70 3419561763     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.04  44360.52    19.43 3860285606     0.00     0.00  SatProblem::rewriteOrUnit(int, int)
+  0.04  44379.35    18.83 3419561763     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  0.03  44391.87    12.52    43598     0.00     0.00  std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  0.03  44403.97    12.11    40800     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+  0.03  44415.15    11.18        5     0.00     0.00  Timer::printTime(std::ostream&, double const&)
+  0.02  44424.97     9.81 3419689759     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.02  44434.76     9.79 1387710363     0.00     0.00  SatProblem::setAtom(int, int)
+  0.02  44442.39     7.62 3860285606     0.00     0.00  int const& std::max<int>(int const&, int const&)
+  0.02  44449.22     6.83        4     0.00     0.01  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned int, std::vector<int, std::allocator<int> >)
+  0.01  44455.39     6.17 2384041231     0.00     0.00  SatProblem::getCnj(int, int)
+  0.01  44461.44     6.05    40800     0.00     0.00  int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+  0.01  44466.91     5.47 3419561763     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.01  44472.02     5.11                             SatProblem::getRealProb(int)
+  0.01  44476.64     4.62 205731813     0.00     0.00  SampleSAT::walk()
+  0.01  44479.79     3.15 102873999     0.00     0.00  SampleSAT::simAnnealing()
+  0.01  44482.69     2.90    40804     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.01  44485.51     2.82                             __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > std::copy<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >)
+  0.01  44488.33     2.81    40804     0.00     0.00  std::allocator<int>::~allocator()
+  0.01  44491.14     2.81   127996     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+  0.01  44493.81     2.67 2384041231     0.00     0.00  SatProblem::getCnf(int)
+  0.01  44496.29     2.49        2     0.00     0.00  Timer::~Timer()
+  0.01  44498.68     2.38  2000000     0.00     0.00  SampleSAT::solve(SatProblem*, int*)
+  0.01  44500.93     2.26                             SliceSampling::calclik(int)
+  0.00  44502.69     1.76        4     0.00     0.01  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&)
+  0.00  44503.69     0.99                             SatProblem::getClause(int)
+  0.00  44504.40     0.71    40804     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00  44505.01     0.61 48606166     0.00     0.00  SatProblem::unit(int, int)
+  0.00  44505.46     0.45 569486937     0.00     0.00  SatProblem::getNumSat()
+  0.00  44505.75     0.29 197036816     0.00     0.00  SatProblem::addNumSat(int)
+  0.00  44505.85     0.09        1     0.00     0.00  SatProblem::parseSliFile(char*)
+  0.00  44505.93     0.08 102873999     0.00     0.00  SampleSAT::getTemp()
+  0.00  44506.00     0.07        1     0.00    43.50  SliceSampling::learn(int*, char*, int)
+  0.00  44506.04     0.04     1000     0.00     0.00  SatProblem::updateTheta(double*)
+  0.00  44506.07     0.04        1     0.00     0.00  global constructors keyed to _ZN10SatProblemC2Em
+  0.00  44506.11     0.03        4     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::vector()
+  0.00  44506.14     0.03        1     0.00     0.00  SliceSampling::lallocate(int)
+  0.00  44506.17     0.03                             SampleSAT::init()
+  0.00  44506.19     0.03                             __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::operator++()
+  0.00  44506.21     0.02                             std::__miter_base<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, false>::__b(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >)
+  0.00  44506.22     0.01                             SatProblem::show()
+  0.00  44506.24     0.01        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00  44506.25     0.01                             SatProblem::getCnfij(int, int)
+  0.00  44506.25     0.01                             SliceSampling::getSample(SatProblem*, int, int*)
+  0.00  44506.25     0.00  2000000     0.00     0.00  SatProblem::getNumFixedClause()
+  0.00  44506.25     0.00   302388     0.00     0.00  std::__niter_base<int*, false>::__b(int*)
+  0.00  44506.25     0.00   174392     0.00     0.00  std::__miter_base<int*, false>::__b(int*)
+  0.00  44506.25     0.00   130794     0.00     0.00  __gnu_cxx::new_allocator<int>::max_size() const
+  0.00  44506.25     0.00   127996     0.00     0.00  int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*)
+  0.00  44506.25     0.00    87196     0.00     0.00  std::vector<int, std::allocator<int> >::max_size() const
+  0.00  44506.25     0.00    87196     0.00     0.00  int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*)
+  0.00  44506.25     0.00    87196     0.00     0.00  int* std::__copy_move_a<false, int*, int*>(int*, int*, int*)
+  0.00  44506.25     0.00    87196     0.00     0.00  int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*)
+  0.00  44506.25     0.00    87196     0.00     0.00  int* std::uninitialized_copy<int*, int*>(int*, int*, int*)
+  0.00  44506.25     0.00    87196     0.00     0.00  int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&)
+  0.00  44506.25     0.00    87196     0.00     0.00  int* std::__uninitialized_move_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+  0.00  44506.25     0.00    87196     0.00     0.00  int* std::copy<int*, int*>(int*, int*, int*)
+  0.00  44506.25     0.00    84402     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int)
+  0.00  44506.25     0.00    84398     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int)
+  0.00  44506.25     0.00    81600     0.00     0.00  std::__miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, false>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+  0.00  44506.25     0.00    81600     0.00     0.00  std::__niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, true>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+  0.00  44506.25     0.00    43602     0.00     0.00  unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  0.00  44506.25     0.00    43598     0.00     0.00  __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int)
+  0.00  44506.25     0.00    43598     0.00     0.00  __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*)
+  0.00  44506.25     0.00    43598     0.00     0.00  std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const
+  0.00  44506.25     0.00    40804     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00  44506.25     0.00    40804     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00  44506.25     0.00    40800     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&)
+  0.00  44506.25     0.00    40800     0.00     0.00  std::allocator<int>::allocator(std::allocator<int> const&)
+  0.00  44506.25     0.00    40800     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&)
+  0.00  44506.25     0.00    40800     0.00     0.00  int* std::__uninitialized_copy<true>::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+  0.00  44506.25     0.00    40800     0.00     0.00  std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+  0.00  44506.25     0.00    40800     0.00     0.00  void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&)
+  0.00  44506.25     0.00    40800     0.00     0.00  int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*)
+  0.00  44506.25     0.00    40800     0.00     0.00  int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+  0.00  44506.25     0.00    40800     0.00     0.00  int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&)
+  0.00  44506.25     0.00    40800     0.00     0.00  int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+  0.00  44506.25     0.00    40800     0.00     0.00  void std::_Destroy<std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*)
+  0.00  44506.25     0.00       24     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::size() const
+  0.00  44506.25     0.00       20     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator()
+  0.00  44506.25     0.00       16     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::base() const
+  0.00  44506.25     0.00       12     0.00     0.00  __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::max_size() const
+  0.00  44506.25     0.00        8     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::__normal_iterator(std::vector<int, std::allocator<int> >* const&)
+  0.00  44506.25     0.00        8     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator() const
+  0.00  44506.25     0.00        8     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::max_size() const
+  0.00  44506.25     0.00        8     0.00     0.00  void std::_Destroy_aux<false>::__destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+  0.00  44506.25     0.00        8     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned int)
+  0.00  44506.25     0.00        8     0.00     0.00  std::vector<int, std::allocator<int> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+  0.00  44506.25     0.00        8     0.00     0.00  std::vector<int, std::allocator<int> >* std::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+  0.00  44506.25     0.00        8     0.00     0.00  std::vector<int, std::allocator<int> >* std::__uninitialized_copy_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&)
+  0.00  44506.25     0.00        8     0.00     0.00  std::vector<int, std::allocator<int> >* std::__uninitialized_move_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&)
+  0.00  44506.25     0.00        8     0.00     0.00  void std::_Destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+  0.00  44506.25     0.00        8     0.00     0.00  void std::_Destroy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&)
+  0.00  44506.25     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::deallocate(std::vector<int, std::allocator<int> >*, unsigned int)
+  0.00  44506.25     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned int, void const*)
+  0.00  44506.25     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::new_allocator()
+  0.00  44506.25     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::~new_allocator()
+  0.00  44506.25     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00  44506.25     0.00        4     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::difference_type __gnu_cxx::operator-<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&)
+  0.00  44506.25     0.00        4     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_check_len(unsigned int, char const*) const
+  0.00  44506.25     0.00        4     0.00     0.00  std::allocator<std::vector<int, std::allocator<int> > >::allocator()
+  0.00  44506.25     0.00        4     0.00     0.00  std::allocator<std::vector<int, std::allocator<int> > >::~allocator()
+  0.00  44506.25     0.00        4     0.00     0.00  std::allocator<int>::allocator()
+  0.00  44506.25     0.00        4     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned int)
+  0.00  44506.25     0.00        4     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl()
+  0.00  44506.25     0.00        4     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::~_Vector_impl()
+  0.00  44506.25     0.00        4     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_base()
+  0.00  44506.25     0.00        4     0.00     0.00  std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~_Vector_base()
+  0.00  44506.25     0.00        4     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  0.00  44506.25     0.00        4     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  0.00  44506.25     0.00        4     0.00     0.00  void std::__uninitialized_fill_n<false>::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&)
+  0.00  44506.25     0.00        4     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::end()
+  0.00  44506.25     0.00        4     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::begin()
+  0.00  44506.25     0.00        4     0.00     0.01  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&)
+  0.00  44506.25     0.00        4     0.00     0.00  std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector()
+  0.00  44506.25     0.00        4     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00  44506.25     0.00        4     0.00     0.00  void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&)
+  0.00  44506.25     0.00        4     0.00     0.00  void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&)
+  0.00  44506.25     0.00        2     0.00     0.00  Timer::Timer()
+  0.00  44506.25     0.00        1     0.00     0.00  global constructors keyed to _ZN9SampleSATC2EP10SatProblemP15samplesatparams
+  0.00  44506.25     0.00        1     0.00     0.00  global constructors keyed to cnffilename
+  0.00  44506.25     0.00        1     0.00     0.00  printlParameters(learnparams*)
+  0.00  44506.25     0.00        1     0.00     0.00  printssParameters(samplesatparams*)
+  0.00  44506.25     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00  44506.25     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00  44506.25     0.00        1     0.00     0.03  SatProblem::parseCnfFile(char*)
+  0.00  44506.25     0.00        1     0.00     0.00  SatProblem::parseProbFile(char*)
+  0.00  44506.25     0.00        1     0.00     0.03  SatProblem::allocate()
+  0.00  44506.25     0.00        1     0.00     0.07  SatProblem::SatProblem(unsigned long)
+  0.00  44506.25     0.00        1     0.00     0.00  SatProblem::~SatProblem()
+  0.00  44506.25     0.00        1     0.00     0.00  SliceSampling::init()
+  0.00  44506.25     0.00        1     0.00     0.00  SliceSampling::SliceSampling(SampleSAT*, SatProblem*, learnparams*)
+  0.00  44506.25     0.00        1     0.00     0.00  SliceSampling::~SliceSampling()
+  0.00  44506.25     0.00        1     0.00     0.00  Random::sgenrand(unsigned long)
+  0.00  44506.25     0.00        1     0.00     0.00  Random::Random()
+  0.00  44506.25     0.00        1     0.00     0.00  SampleSAT::setWalkMax(int)
+  0.00  44506.25     0.00        1     0.00     0.00  SampleSAT::setNumSample(int)
+  0.00  44506.25     0.00        1     0.00     0.00  SampleSAT::setTemperature(double)
+  0.00  44506.25     0.00        1     0.00     0.00  SampleSAT::setWalkSatProb(double)
+  0.00  44506.25     0.00        1     0.00     0.00  SampleSAT::setRandomWalkProb(double)
+  0.00  44506.25     0.00        1     0.00     0.00  SampleSAT::SampleSAT(SatProblem*, samplesatparams*)
+  0.00  44506.25     0.00        1     0.00     0.00  SampleSAT::~SampleSAT()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.00% of 44506.25 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     98.0    0.00 43607.53                 main [1]
+                0.07 43500.03       1/1           SliceSampling::learn(int*, char*, int) [2]
+                0.00   66.30       1/1           SatProblem::SatProblem(unsigned long) [56]
+                0.00   30.87       1/1           SatProblem::parseCnfFile(char*) [64]
+                4.47    0.00       2/5           Timer::printTime(std::ostream&, double const&) [79]
+                0.00    3.21       1/1           SatProblem::~SatProblem() [97]
+                0.00    1.25       1/1           SliceSampling::~SliceSampling() [106]
+                1.25    0.00       1/2           Timer::~Timer() [102]
+                0.09    0.00       1/1           SatProblem::parseSliFile(char*) [110]
+                0.00    0.00   10202/16742354555     SatProblem::getNumVariables() [20]
+                0.00    0.00       4/2686212400     Timer::time() [38]
+                0.00    0.00       1/1           SliceSampling::SliceSampling(SampleSAT*, SatProblem*, learnparams*) [128]
+                0.00    0.00       1/2           Timer::Timer() [185]
+                0.00    0.00       1/1           SatProblem::parseProbFile(char*) [192]
+                0.00    0.00       1/1           SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [200]
+                0.00    0.00       1/1           printssParameters(samplesatparams*) [189]
+                0.00    0.00       1/1           printlParameters(learnparams*) [188]
+                0.00    0.00       1/1           SampleSAT::~SampleSAT() [201]
+-----------------------------------------------
+                                   1             SliceSampling::learn(int*, char*, int) [2]
+                0.07 43500.03       1/1           main [1]
+[2]     97.7    0.07 43500.03       1+1       SliceSampling::learn(int*, char*, int) [2]
+              164.62 43332.49       1/1           SliceSampling::cdlearn(int) [3]
+                2.24    0.00       1/5           Timer::printTime(std::ostream&, double const&) [79]
+                0.65    0.00 10211202/16742354555     SatProblem::getNumVariables() [20]
+                0.03    0.00       1/1           SliceSampling::lallocate(int) [115]
+                0.00    0.00       2/2686212400     Timer::time() [38]
+                                   1             SliceSampling::learn(int*, char*, int) [2]
+-----------------------------------------------
+              164.62 43332.49       1/1           SliceSampling::learn(int*, char*, int) [2]
+[3]     97.7  164.62 43332.49       1         SliceSampling::cdlearn(int) [3]
+              280.88 42165.49 2000000/2000000     SliceSampling::sampleX() [4]
+               86.28  674.28 2000000/2000000     SliceSampling::sampleU() [25]
+              103.67    0.00 1631467408/16742354555     SatProblem::getNumVariables() [20]
+               21.89    0.00 3220130816/19320784896     SatProblem::getTheta(int) [48]
+                0.00    0.00    3000/2686212400     Timer::time() [38]
+                0.00    0.00    1000/5644962127     SatProblem::getGrand() [23]
+-----------------------------------------------
+              280.88 42165.49 2000000/2000000     SliceSampling::cdlearn(int) [3]
+[4]     95.4  280.88 42165.49 2000000         SliceSampling::sampleX() [4]
+                2.38 36412.67 2000000/2000000     SampleSAT::solve(SatProblem*, int*) [5]
+             1762.72 1798.44 2000000/2000000     SatProblem::initParams() [11]
+               73.00 1775.96 1339104197/1339104197     SliceSampling::unitProc(int, int) [16]
+              204.75    0.00 3222130816/16742354555     SatProblem::getNumVariables() [20]
+               90.95    0.00 2000000/2000000     SatProblem::getNumFixedAtom() [51]
+               43.77    0.00 6440261632/19320784896     SatProblem::getTheta(int) [48]
+                0.85    0.00 8000000/2686212400     Timer::time() [38]
+                0.00    0.00 2000000/2000000     SatProblem::getNumFixedClause() [132]
+-----------------------------------------------
+                2.38 36412.67 2000000/2000000     SliceSampling::sampleX() [4]
+[5]     81.8    2.38 36412.67 2000000         SampleSAT::solve(SatProblem*, int*) [5]
+                4.62 33727.36 205731813/205731813     SampleSAT::walk() [6]
+              119.99 1478.10 2000000/2000000     SatProblem::initSatCheck(int*) [17]
+              163.64  729.77 2000000/2000000     SampleSAT::init_model() [21]
+              189.19    0.00 2000000/2000000     SatProblem::cpClVector() [42]
+-----------------------------------------------
+                4.62 33727.36 205731813/205731813     SampleSAT::solve(SatProblem*, int*) [5]
+[6]     75.8    4.62 33727.36 205731813         SampleSAT::walk() [6]
+             5426.58 19818.91 51433164/51433164     SampleSAT::greedyWalk() [7]
+             1986.01 4365.35 51424650/51424650     SampleSAT::randomWalk() [10]
+                3.15 1916.17 102873999/102873999     SampleSAT::simAnnealing() [14]
+              168.15    0.00 197036816/197036816     SatProblem::getNumClauses() [45]
+                1.96   40.94 308589627/5644962127     SatProblem::getGrand() [23]
+                0.16    0.00 197036816/569486937     SatProblem::getNumSat() [108]
+-----------------------------------------------
+             5426.58 19818.91 51433164/51433164     SampleSAT::walk() [6]
+[7]     56.7 5426.58 19818.91 51433164         SampleSAT::greedyWalk() [7]
+             14251.67 4647.73 4148354794/4251228793     SatProblem::getNsc2(int*, int) [8]
+               57.03  698.76 51433164/197036816     SatProblem::afterFlip(int*, int) [12]
+              126.39    0.00 1988931412/16742354555     SatProblem::getNumVariables() [20]
+               37.09    0.00 632262688/7711704492     SatProblem::getVar(int) [34]
+                0.17    0.00 218151472/569486937     SatProblem::getNumSat() [108]
+                0.08    0.00 51433164/197036816     SatProblem::addNumSat(int) [109]
+-----------------------------------------------
+              353.42  115.26 102873999/4251228793     SampleSAT::simAnnealing() [14]
+             14251.67 4647.73 4148354794/4251228793     SampleSAT::greedyWalk() [7]
+[8]     43.5 14605.09 4762.99 4251228793         SatProblem::getNsc2(int*, int) [8]
+             3975.07    0.00 4113521098/7804652310     SatProblem::isSatCnj(int*, int) [9]
+              307.66    0.00 16279130380/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+              307.46    0.00 8227042196/37206738303     std::vector<int, std::allocator<int> >::operator[](unsigned int) [18]
+              172.80    0.00 8052088184/36392847147     std::vector<int, std::allocator<int> >::size() const [24]
+-----------------------------------------------
+             1478.10    0.00 1529578558/7804652310     SatProblem::initSatCheck(int*) [17]
+             2088.80    0.00 2161552654/7804652310     SatProblem::afterFlip(int*, int) [12]
+             3975.07    0.00 4113521098/7804652310     SatProblem::getNsc2(int*, int) [8]
+[9]     16.9 7541.96    0.00 7804652310         SatProblem::isSatCnj(int*, int) [9]
+-----------------------------------------------
+             1986.01 4365.35 51424650/51424650     SampleSAT::walk() [6]
+[10]    14.3 1986.01 4365.35 51424650         SampleSAT::randomWalk() [10]
+              164.57 2240.69 51405671/51405671     SatProblem::getNsc1(int*, int) [13]
+              647.58    0.00 5707471756/5707471756     SatProblem::getClVec(int) [28]
+              626.30    0.00 3574914306/3574914306     SatProblem::getFixedClausei(int) [29]
+              521.43    0.00 7355527212/7355527212     SatProblem::getClVecSize() [33]
+              133.68    0.00 2278992559/7711704492     SatProblem::getVar(int) [34]
+               22.13    0.00 6837278159/10697563765     SatProblem::getCnjSize(int) [63]
+                6.17    2.67 2384041231/2384041231     SatProblem::getCnj(int, int) [82]
+                0.08    0.00 51405671/197036816     SatProblem::addNumSat(int) [109]
+                0.04    0.00 51424650/569486937     SatProblem::getNumSat() [108]
+-----------------------------------------------
+             1762.72 1798.44 2000000/2000000     SliceSampling::sampleX() [4]
+[11]     8.0 1762.72 1798.44 2000000         SatProblem::initParams() [11]
+              154.81  466.20 5564771697/5564771697     std::vector<int, std::allocator<int> >::empty() const [30]
+              117.80  469.47 3419477361/3419477361     std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [31]
+              357.45    0.00 18913792452/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+               81.48   82.41 3090588672/6902328312     std::vector<int, std::allocator<int> >::push_back(int const&) [36]
+               29.97    6.49 3419477361/10258475681     std::vector<int, std::allocator<int> >::end() [49]
+               16.17   16.20 3419477361/7231200399     std::vector<int, std::allocator<int> >::begin() [55]
+-----------------------------------------------
+               57.00  698.38 51405671/197036816     SatProblem::getNsc1(int*, int) [13]
+               57.03  698.76 51433164/197036816     SampleSAT::greedyWalk() [7]
+              104.44 1279.75 94197981/197036816     SampleSAT::simAnnealing() [14]
+[12]     6.5  218.47 2676.89 197036816         SatProblem::afterFlip(int*, int) [12]
+             2088.80    0.00 2161552654/7804652310     SatProblem::isSatCnj(int*, int) [9]
+              322.07    0.00 8618072604/37206738303     std::vector<int, std::allocator<int> >::operator[](unsigned int) [18]
+              211.17    0.00 11173698890/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+               54.84    0.00 2555626286/36392847147     std::vector<int, std::allocator<int> >::size() const [24]
+-----------------------------------------------
+              164.57 2240.69 51405671/51405671     SampleSAT::randomWalk() [10]
+[13]     5.4  164.57 2240.69 51405671         SatProblem::getNsc1(int*, int) [13]
+               57.00  698.38 51405671/197036816     SatProblem::afterFlip(int*, int) [12]
+              581.64    0.00 30775805744/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+              571.23    0.00 15285091530/37206738303     std::vector<int, std::allocator<int> >::operator[](unsigned int) [18]
+              332.43    0.00 15490714214/36392847147     std::vector<int, std::allocator<int> >::size() const [24]
+-----------------------------------------------
+                3.15 1916.17 102873999/102873999     SampleSAT::walk() [6]
+[14]     4.3    3.15 1916.17 102873999         SampleSAT::simAnnealing() [14]
+              104.44 1279.75 94197981/197036816     SatProblem::afterFlip(int*, int) [12]
+              353.42  115.26 102873999/4251228793     SatProblem::getNsc2(int*, int) [8]
+                1.80   37.65 283820231/5644962127     SatProblem::getGrand() [23]
+               12.24    0.00 192608066/16742354555     SatProblem::getNumVariables() [20]
+               11.30    0.00 192608066/7711704492     SatProblem::getVar(int) [34]
+                0.14    0.00 94197981/197036816     SatProblem::addNumSat(int) [109]
+                0.08    0.00 102873999/569486937     SatProblem::getNumSat() [108]
+                0.08    0.00 102873999/102873999     SampleSAT::getTemp() [111]
+-----------------------------------------------
+                0.00    0.00   60200/100136581790     SatProblem::parseCnfFile(char*) [64]
+               71.69    0.00 3793397945/100136581790     SatProblem::setClause(int, int) [35]
+               74.73    0.00 3953978419/100136581790     SatProblem::rewriteWL(int, int) <cycle 1> [37]
+              211.17    0.00 11173698890/100136581790     SatProblem::afterFlip(int*, int) [12]
+              288.15    0.00 15246717760/100136581790     SatProblem::setWatchIdx(int, int, int) [26]
+              307.66    0.00 16279130380/100136581790     SatProblem::getNsc2(int*, int) [8]
+              357.45    0.00 18913792452/100136581790     SatProblem::initParams() [11]
+              581.64    0.00 30775805744/100136581790     SatProblem::getNsc1(int*, int) [13]
+[15]     4.3 1892.49    0.00 100136581790         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+-----------------------------------------------
+               73.00 1775.96 1339104197/1339104197     SliceSampling::sampleX() [4]
+[16]     4.2   73.00 1775.96 1339104197         SliceSampling::unitProc(int, int) [16]
+              131.60  964.15 1339104197/1339104197     SatProblem::rewriteWL(int, int) <cycle 1> [37]
+              180.75  205.98 1339104197/1387710363     SatProblem::setClause(int, int) [35]
+              284.02    0.00 2678208394/2686212400     Timer::time() [38]
+                9.45    0.00 1339104197/1387710363     SatProblem::setAtom(int, int) [81]
+-----------------------------------------------
+              119.99 1478.10 2000000/2000000     SampleSAT::solve(SatProblem*, int*) [5]
+[17]     3.6  119.99 1478.10 2000000         SatProblem::initSatCheck(int*) [17]
+             1478.10    0.00 1529578558/7804652310     SatProblem::isSatCnj(int*, int) [9]
+-----------------------------------------------
+               47.95    0.00 1283134028/37206738303     SatProblem::rewriteWL(int, int) <cycle 1> [37]
+              141.77    0.00 3793397945/37206738303     SatProblem::setClause(int, int) [35]
+              307.46    0.00 8227042196/37206738303     SatProblem::getNsc2(int*, int) [8]
+              322.07    0.00 8618072604/37206738303     SatProblem::afterFlip(int*, int) [12]
+              571.23    0.00 15285091530/37206738303     SatProblem::getNsc1(int*, int) [13]
+[18]     3.1 1390.49    0.00 37206738303         std::vector<int, std::allocator<int> >::operator[](unsigned int) [18]
+-----------------------------------------------
+[19]     2.5  131.60  964.15 1339104197+3957497938 <cycle 1 as a whole> [19]
+               19.43  769.77 3860285606             SatProblem::rewriteOrUnit(int, int) <cycle 1> [22]
+              111.56  180.00 1387710363             SatProblem::rewriteWL(int, int) <cycle 1> [37]
+                0.61   14.38 48606166             SatProblem::unit(int, int) <cycle 1> [75]
+-----------------------------------------------
+                0.00    0.00       1/16742354555     SliceSampling::init() [127]
+                0.00    0.00   10202/16742354555     main [1]
+                0.65    0.00 10211202/16742354555     SliceSampling::learn(int*, char*, int) [2]
+               12.24    0.00 192608066/16742354555     SampleSAT::simAnnealing() [14]
+              102.38    0.00 1611065408/16742354555     SliceSampling::readdata(char*) [40]
+              103.67    0.00 1631467408/16742354555     SliceSampling::cdlearn(int) [3]
+              104.32    0.00 1641668408/16742354555     SliceSampling::mcmclearn(int) [32]
+              126.39    0.00 1988931412/16742354555     SampleSAT::greedyWalk() [7]
+              204.75    0.00 3222130816/16742354555     SampleSAT::init_model() [21]
+              204.75    0.00 3222130816/16742354555     SliceSampling::sampleU() [25]
+              204.75    0.00 3222130816/16742354555     SliceSampling::sampleX() [4]
+[20]     2.4 1063.91    0.00 16742354555         SatProblem::getNumVariables() [20]
+-----------------------------------------------
+              163.64  729.77 2000000/2000000     SampleSAT::solve(SatProblem*, int*) [5]
+[21]     2.0  163.64  729.77 2000000         SampleSAT::init_model() [21]
+              270.28    0.00 4607841179/7711704492     SatProblem::getVar(int) [34]
+               11.64  243.09 1832420453/5644962127     SatProblem::getGrand() [23]
+              204.75    0.00 3222130816/16742354555     SatProblem::getNumVariables() [20]
+-----------------------------------------------
+                             3860285606             SatProblem::rewriteWL(int, int) <cycle 1> [37]
+[22]     1.8   19.43  769.77 3860285606         SatProblem::rewriteOrUnit(int, int) <cycle 1> [22]
+               59.70  689.95 3811679440/3811679440     SatProblem::setWatchIdx(int, int, int) [26]
+               12.49    0.00 3860285606/10697563765     SatProblem::getCnjSize(int) [63]
+                7.62    0.00 3860285606/3860285606     int const& std::max<int>(int const&, int const&) [83]
+                             48606166             SatProblem::unit(int, int) <cycle 1> [75]
+-----------------------------------------------
+                0.00    0.00    1000/5644962127     SliceSampling::cdlearn(int) [3]
+                1.80   37.65 283820231/5644962127     SampleSAT::simAnnealing() [14]
+                1.96   40.94 308589627/5644962127     SampleSAT::walk() [6]
+               11.64  243.09 1832420453/5644962127     SampleSAT::init_model() [21]
+               20.46  427.18 3220130816/5644962127     SliceSampling::sampleU() [25]
+[23]     1.8   35.87  748.85 5644962127         SatProblem::getGrand() [23]
+              748.85    0.00 1349994831/1349994831     Random::genrand() [27]
+-----------------------------------------------
+                0.00    0.00   40800/36392847147     std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+                0.00    0.00  174392/36392847147     std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [104]
+               54.84    0.00 2555626286/36392847147     SatProblem::afterFlip(int*, int) [12]
+               57.32    0.00 2670844391/36392847147     SatProblem::rewriteWL(int, int) <cycle 1> [37]
+              163.60    0.00 7623358880/36392847147     SatProblem::setWatchIdx(int, int, int) [26]
+              172.80    0.00 8052088184/36392847147     SatProblem::getNsc2(int*, int) [8]
+              332.43    0.00 15490714214/36392847147     SatProblem::getNsc1(int*, int) [13]
+[24]     1.8  781.00    0.00 36392847147         std::vector<int, std::allocator<int> >::size() const [24]
+-----------------------------------------------
+               86.28  674.28 2000000/2000000     SliceSampling::cdlearn(int) [3]
+[25]     1.7   86.28  674.28 2000000         SliceSampling::sampleU() [25]
+               20.46  427.18 3220130816/5644962127     SatProblem::getGrand() [23]
+              204.75    0.00 3222130816/16742354555     SatProblem::getNumVariables() [20]
+               21.89    0.00 3220130816/19320784896     SatProblem::getTheta(int) [48]
+-----------------------------------------------
+               59.70  689.95 3811679440/3811679440     SatProblem::rewriteOrUnit(int, int) <cycle 1> [22]
+[26]     1.7   59.70  689.95 3811679440         SatProblem::setWatchIdx(int, int, int) [26]
+              288.15    0.00 15246717760/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+              100.49  101.64 3811679440/6902328312     std::vector<int, std::allocator<int> >::push_back(int const&) [36]
+              163.60    0.00 7623358880/36392847147     std::vector<int, std::allocator<int> >::size() const [24]
+               18.02   18.05 3811679440/7231200399     std::vector<int, std::allocator<int> >::begin() [55]
+-----------------------------------------------
+              748.85    0.00 1349994831/1349994831     SatProblem::getGrand() [23]
+[27]     1.7  748.85    0.00 1349994831         Random::genrand() [27]
+-----------------------------------------------
+              647.58    0.00 5707471756/5707471756     SampleSAT::randomWalk() [10]
+[28]     1.5  647.58    0.00 5707471756         SatProblem::getClVec(int) [28]
+-----------------------------------------------
+              626.30    0.00 3574914306/3574914306     SampleSAT::randomWalk() [10]
+[29]     1.4  626.30    0.00 3574914306         SatProblem::getFixedClausei(int) [29]
+-----------------------------------------------
+              154.81  466.20 5564771697/5564771697     SatProblem::initParams() [11]
+[30]     1.4  154.81  466.20 5564771697         std::vector<int, std::allocator<int> >::empty() const [30]
+              134.29   48.48 1269804401/1269804401     bool __gnu_cxx::operator==<int const*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&) [43]
+              115.61   31.77 1269804401/1269845201     std::vector<int, std::allocator<int> >::end() const [46]
+              104.29   31.77 1269804401/1269845201     std::vector<int, std::allocator<int> >::begin() const [47]
+-----------------------------------------------
+              117.80  469.47 3419477361/3419477361     SatProblem::initParams() [11]
+[31]     1.3  117.80  469.47 3419477361         std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [31]
+              182.89   28.32 3419477361/3419520959     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [41]
+               45.99   55.81 3419477361/3419477361     std::vector<int, std::allocator<int> >::_M_erase_at_end(int*) [50]
+               59.93   12.97 6838954722/10258475681     std::vector<int, std::allocator<int> >::end() [49]
+               41.08   28.32 3419477361/3419477361     bool __gnu_cxx::operator!=<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [54]
+               14.16    0.00 3419477361/17097561197     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [53]
+-----------------------------------------------
+                                   2             SliceSampling::mcmclearn(int) [32]
+[32]     1.2  187.64  352.71       0+2       SliceSampling::mcmclearn(int) [32]
+               97.68  124.26    1000/1000        SliceSampling::readdata(char*) [40]
+              104.32    0.00 1641668408/16742354555     SatProblem::getNumVariables() [20]
+               21.89    0.00 3220130816/19320784896     SatProblem::getTheta(int) [48]
+                4.47    0.00       2/5           Timer::printTime(std::ostream&, double const&) [79]
+                0.04    0.00    1000/1000        SatProblem::updateTheta(double*) [112]
+                0.04    0.01       1/1           global constructors keyed to _ZN10SatProblemC2Em [113]
+                0.00    0.00    1000/2686212400     Timer::time() [38]
+                0.00    0.00       1/1           global constructors keyed to cnffilename [187]
+                0.00    0.00       1/1           global constructors keyed to _ZN9SampleSATC2EP10SatProblemP15samplesatparams [186]
+                                   2             SliceSampling::mcmclearn(int) [32]
+-----------------------------------------------
+              521.43    0.00 7355527212/7355527212     SampleSAT::randomWalk() [10]
+[33]     1.2  521.43    0.00 7355527212         SatProblem::getClVecSize() [33]
+-----------------------------------------------
+               11.30    0.00 192608066/7711704492     SampleSAT::simAnnealing() [14]
+               37.09    0.00 632262688/7711704492     SampleSAT::greedyWalk() [7]
+              133.68    0.00 2278992559/7711704492     SampleSAT::randomWalk() [10]
+              270.28    0.00 4607841179/7711704492     SampleSAT::init_model() [21]
+[34]     1.0  452.35    0.00 7711704492         SatProblem::getVar(int) [34]
+-----------------------------------------------
+                6.56    7.48 48606166/1387710363     SatProblem::unit(int, int) <cycle 1> [75]
+              180.75  205.98 1339104197/1387710363     SliceSampling::unitProc(int, int) [16]
+[35]     0.9  187.31  213.46 1387710363         SatProblem::setClause(int, int) [35]
+              141.77    0.00 3793397945/37206738303     std::vector<int, std::allocator<int> >::operator[](unsigned int) [18]
+               71.69    0.00 3793397945/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+-----------------------------------------------
+                0.00    0.00   60200/6902328312     SatProblem::parseCnfFile(char*) [64]
+               81.48   82.41 3090588672/6902328312     SatProblem::initParams() [11]
+              100.49  101.64 3811679440/6902328312     SatProblem::setWatchIdx(int, int, int) [26]
+[36]     0.8  181.97  184.05 6902328312         std::vector<int, std::allocator<int> >::push_back(int const&) [36]
+              131.19   38.42 2607317418/2607361016     __gnu_cxx::new_allocator<int>::construct(int*, int const&) [44]
+               12.52    1.92   43598/43598       std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+                0.00    0.00   43598/10258475681     std::vector<int, std::allocator<int> >::end() [49]
+-----------------------------------------------
+                             48606166             SatProblem::unit(int, int) <cycle 1> [75]
+              131.60  964.15 1339104197/1339104197     SliceSampling::unitProc(int, int) [16]
+[37]     0.7  111.56  180.00 1387710363         SatProblem::rewriteWL(int, int) <cycle 1> [37]
+               74.73    0.00 3953978419/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+               57.32    0.00 2670844391/36392847147     std::vector<int, std::allocator<int> >::size() const [24]
+               47.95    0.00 1283134028/37206738303     std::vector<int, std::allocator<int> >::operator[](unsigned int) [18]
+                             3860285606             SatProblem::rewriteOrUnit(int, int) <cycle 1> [22]
+-----------------------------------------------
+                0.00    0.00       2/2686212400     SliceSampling::learn(int*, char*, int) [2]
+                0.00    0.00       4/2686212400     main [1]
+                0.00    0.00    1000/2686212400     SliceSampling::mcmclearn(int) [32]
+                0.00    0.00    3000/2686212400     SliceSampling::cdlearn(int) [3]
+                0.85    0.00 8000000/2686212400     SliceSampling::sampleX() [4]
+              284.02    0.00 2678208394/2686212400     SliceSampling::unitProc(int, int) [16]
+[38]     0.6  284.87    0.00 2686212400         Timer::time() [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[39]     0.6  267.38    0.00                 SatProblem::walkIsSat(int*, int) [39]
+-----------------------------------------------
+               97.68  124.26    1000/1000        SliceSampling::mcmclearn(int) [32]
+[40]     0.5   97.68  124.26    1000         SliceSampling::readdata(char*) [40]
+              102.38    0.00 1611065408/16742354555     SatProblem::getNumVariables() [20]
+               21.89    0.00 3220130816/19320784896     SatProblem::getTheta(int) [48]
+-----------------------------------------------
+                0.00    0.00   43598/3419520959     std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+              182.89   28.32 3419477361/3419520959     std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [31]
+[41]     0.5  182.89   28.32 3419520959         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [41]
+               28.32    0.00 6839041918/17097561197     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [53]
+-----------------------------------------------
+              189.19    0.00 2000000/2000000     SampleSAT::solve(SatProblem*, int*) [5]
+[42]     0.4  189.19    0.00 2000000         SatProblem::cpClVector() [42]
+-----------------------------------------------
+              134.29   48.48 1269804401/1269804401     std::vector<int, std::allocator<int> >::empty() const [30]
+[43]     0.4  134.29   48.48 1269804401         bool __gnu_cxx::operator==<int const*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&) [43]
+               48.48    0.00 2539608802/2539690402     __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const [60]
+-----------------------------------------------
+                0.00    0.00   43598/2607361016     std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+              131.19   38.42 2607317418/2607361016     std::vector<int, std::allocator<int> >::push_back(int const&) [36]
+[44]     0.4  131.19   38.42 2607361016         __gnu_cxx::new_allocator<int>::construct(int*, int const&) [44]
+               38.42    0.00 2607361016/2607401816     operator new(unsigned int, void*) [62]
+-----------------------------------------------
+              168.15    0.00 197036816/197036816     SampleSAT::walk() [6]
+[45]     0.4  168.15    0.00 197036816         SatProblem::getNumClauses() [45]
+-----------------------------------------------
+                0.00    0.00   40800/1269845201     std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+              115.61   31.77 1269804401/1269845201     std::vector<int, std::allocator<int> >::empty() const [30]
+[46]     0.3  115.61   31.77 1269845201         std::vector<int, std::allocator<int> >::end() const [46]
+               31.77    0.00 1269845201/2539690402     __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&) [58]
+-----------------------------------------------
+                0.00    0.00   40800/1269845201     std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+              104.29   31.77 1269804401/1269845201     std::vector<int, std::allocator<int> >::empty() const [30]
+[47]     0.3  104.29   31.77 1269845201         std::vector<int, std::allocator<int> >::begin() const [47]
+               31.77    0.00 1269845201/2539690402     __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&) [58]
+-----------------------------------------------
+               21.89    0.00 3220130816/19320784896     SliceSampling::sampleU() [25]
+               21.89    0.00 3220130816/19320784896     SliceSampling::readdata(char*) [40]
+               21.89    0.00 3220130816/19320784896     SliceSampling::cdlearn(int) [3]
+               21.89    0.00 3220130816/19320784896     SliceSampling::mcmclearn(int) [32]
+               43.77    0.00 6440261632/19320784896     SliceSampling::sampleX() [4]
+[48]     0.3  131.32    0.00 19320784896         SatProblem::getTheta(int) [48]
+-----------------------------------------------
+                0.00    0.00   43598/10258475681     std::vector<int, std::allocator<int> >::push_back(int const&) [36]
+               29.97    6.49 3419477361/10258475681     SatProblem::initParams() [11]
+               59.93   12.97 6838954722/10258475681     std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [31]
+[49]     0.2   89.90   19.46 10258475681         std::vector<int, std::allocator<int> >::end() [49]
+               19.46    0.00 1668541089/4604774192     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [59]
+-----------------------------------------------
+               45.99   55.81 3419477361/3419477361     std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [31]
+[50]     0.2   45.99   55.81 3419477361         std::vector<int, std::allocator<int> >::_M_erase_at_end(int*) [50]
+               18.83   27.16 3419477361/3419561763     void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [61]
+                9.81    0.00 3419477361/3419689759     std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [80]
+-----------------------------------------------
+               90.95    0.00 2000000/2000000     SliceSampling::sampleX() [4]
+[51]     0.2   90.95    0.00 2000000         SatProblem::getNumFixedAtom() [51]
+-----------------------------------------------
+                                                 <spontaneous>
+[52]     0.2   79.69    0.00                 SatProblem::getNegWLij(int, int) [52]
+-----------------------------------------------
+                0.00    0.00   87196/17097561197     std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+               14.16    0.00 3419477361/17097561197     std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [31]
+               28.32    0.00 6838954722/17097561197     bool __gnu_cxx::operator!=<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [54]
+               28.32    0.00 6839041918/17097561197     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [41]
+[53]     0.2   70.80    0.00 17097561197         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [53]
+-----------------------------------------------
+               41.08   28.32 3419477361/3419477361     std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [31]
+[54]     0.2   41.08   28.32 3419477361         bool __gnu_cxx::operator!=<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [54]
+               28.32    0.00 6838954722/17097561197     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [53]
+-----------------------------------------------
+                0.00    0.00   43598/7231200399     std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+               16.17   16.20 3419477361/7231200399     SatProblem::initParams() [11]
+               18.02   18.05 3811679440/7231200399     SatProblem::setWatchIdx(int, int, int) [26]
+[55]     0.2   34.19   34.25 7231200399         std::vector<int, std::allocator<int> >::begin() [55]
+               34.25    0.00 2936233103/4604774192     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [59]
+-----------------------------------------------
+                0.00   66.30       1/1           main [1]
+[56]     0.1    0.00   66.30       1         SatProblem::SatProblem(unsigned long) [56]
+               66.27    0.00       2/2           __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator() [57]
+                0.03    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::vector() [114]
+                0.00    0.00       1/1           Random::Random() [194]
+                0.00    0.00       1/1           Random::sgenrand(unsigned long) [193]
+-----------------------------------------------
+               66.27    0.00       2/2           SatProblem::SatProblem(unsigned long) [56]
+[57]     0.1   66.27    0.00       2         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator() [57]
+-----------------------------------------------
+               31.77    0.00 1269845201/2539690402     std::vector<int, std::allocator<int> >::begin() const [47]
+               31.77    0.00 1269845201/2539690402     std::vector<int, std::allocator<int> >::end() const [46]
+[58]     0.1   63.55    0.00 2539690402         __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&) [58]
+-----------------------------------------------
+               19.46    0.00 1668541089/4604774192     std::vector<int, std::allocator<int> >::end() [49]
+               34.25    0.00 2936233103/4604774192     std::vector<int, std::allocator<int> >::begin() [55]
+[59]     0.1   53.71    0.00 4604774192         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [59]
+-----------------------------------------------
+                0.00    0.00   81600/2539690402     std::__niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, true>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) [123]
+               48.48    0.00 2539608802/2539690402     bool __gnu_cxx::operator==<int const*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&) [43]
+[60]     0.1   48.48    0.00 2539690402         __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const [60]
+-----------------------------------------------
+                0.00    0.00   40804/3419561763     std::vector<int, std::allocator<int> >::~vector() [84]
+                0.00    0.00   43598/3419561763     std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+               18.83   27.16 3419477361/3419561763     std::vector<int, std::allocator<int> >::_M_erase_at_end(int*) [50]
+[61]     0.1   18.83   27.16 3419561763         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [61]
+               21.70    5.47 3419561763/3419561763     void std::_Destroy<int*>(int*, int*) [67]
+-----------------------------------------------
+                0.00    0.00   40800/2607401816     void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) [70]
+               38.42    0.00 2607361016/2607401816     __gnu_cxx::new_allocator<int>::construct(int*, int const&) [44]
+[62]     0.1   38.42    0.00 2607401816         operator new(unsigned int, void*) [62]
+-----------------------------------------------
+               12.49    0.00 3860285606/10697563765     SatProblem::rewriteOrUnit(int, int) <cycle 1> [22]
+               22.13    0.00 6837278159/10697563765     SampleSAT::randomWalk() [10]
+[63]     0.1   34.62    0.00 10697563765         SatProblem::getCnjSize(int) [63]
+-----------------------------------------------
+                0.00   30.87       1/1           main [1]
+[64]     0.1    0.00   30.87       1         SatProblem::parseCnfFile(char*) [64]
+                0.00   30.87       1/1           SatProblem::allocate() [65]
+                0.00    0.00   60200/6902328312     std::vector<int, std::allocator<int> >::push_back(int const&) [36]
+                0.00    0.00   60200/100136581790     std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int) [15]
+-----------------------------------------------
+                0.00   30.87       1/1           SatProblem::parseCnfFile(char*) [64]
+[65]     0.1    0.00   30.87       1         SatProblem::allocate() [65]
+                6.83   24.03       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned int, std::vector<int, std::allocator<int> >) [66]
+                0.00    0.00       4/40804       std::vector<int, std::allocator<int> >::~vector() [84]
+                0.00    0.00       4/4           std::vector<int, std::allocator<int> >::vector() [184]
+-----------------------------------------------
+                6.83   24.03       4/4           SatProblem::allocate() [65]
+[66]     0.1    6.83   24.03       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned int, std::vector<int, std::allocator<int> >) [66]
+                0.00   24.03       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [69]
+                0.00    0.00       8/24          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::size() const [153]
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::end() [182]
+-----------------------------------------------
+               21.70    5.47 3419561763/3419561763     void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [61]
+[67]     0.1   21.70    5.47 3419561763         void std::_Destroy<int*>(int*, int*) [67]
+                5.47    0.00 3419561763/3419561763     void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [94]
+-----------------------------------------------
+                1.76   22.27       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [69]
+[68]     0.1    1.76   22.27       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+                0.00   19.06       4/4           void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) [73]
+                0.00    3.21       4/8           void std::_Destroy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [88]
+                0.00    0.00      16/20          std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator() [154]
+                0.00    0.00       8/16          __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::base() const [155]
+                0.00    0.00       8/8           std::vector<int, std::allocator<int> >* std::__uninitialized_move_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [164]
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_check_len(unsigned int, char const*) const [171]
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::begin() [183]
+                0.00    0.00       4/4           __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::difference_type __gnu_cxx::operator-<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&) [170]
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned int) [175]
+                0.00    0.00       4/8           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [160]
+-----------------------------------------------
+                0.00   24.03       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned int, std::vector<int, std::allocator<int> >) [66]
+[69]     0.1    0.00   24.03       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [69]
+                1.76   22.27       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+-----------------------------------------------
+                0.00   19.06   40800/40800       void std::__uninitialized_fill_n<false>::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&) [71]
+[70]     0.0    0.00   19.06   40800         void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) [70]
+                0.00   19.06   40800/40800       std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+                0.00    0.00   40800/2607401816     operator new(unsigned int, void*) [62]
+-----------------------------------------------
+                0.00   19.06       4/4           void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&) [72]
+[71]     0.0    0.00   19.06       4         void std::__uninitialized_fill_n<false>::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&) [71]
+                0.00   19.06   40800/40800       void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) [70]
+-----------------------------------------------
+                0.00   19.06       4/4           void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) [73]
+[72]     0.0    0.00   19.06       4         void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&) [72]
+                0.00   19.06       4/4           void std::__uninitialized_fill_n<false>::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&) [71]
+-----------------------------------------------
+                0.00   19.06       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[73]     0.0    0.00   19.06       4         void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) [73]
+                0.00   19.06       4/4           void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&) [72]
+-----------------------------------------------
+                0.00   19.06   40800/40800       void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) [70]
+[74]     0.0    0.00   19.06   40800         std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+                0.00   12.11   40800/40800       std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [78]
+                0.00    6.05   40800/40800       int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&) [91]
+                0.89    0.00   40800/127996      std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [100]
+                0.00    0.00   40800/1269845201     std::vector<int, std::allocator<int> >::end() const [46]
+                0.00    0.00   40800/1269845201     std::vector<int, std::allocator<int> >::begin() const [47]
+                0.00    0.00   40800/36392847147     std::vector<int, std::allocator<int> >::size() const [24]
+                0.00    0.00   40800/3419689759     std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [80]
+-----------------------------------------------
+                             48606166             SatProblem::rewriteOrUnit(int, int) <cycle 1> [22]
+[75]     0.0    0.61   14.38 48606166         SatProblem::unit(int, int) <cycle 1> [75]
+                6.56    7.48 48606166/1387710363     SatProblem::setClause(int, int) [35]
+                0.34    0.00 48606166/1387710363     SatProblem::setAtom(int, int) [81]
+                             48606166             SatProblem::rewriteWL(int, int) <cycle 1> [37]
+-----------------------------------------------
+               12.52    1.92   43598/43598       std::vector<int, std::allocator<int> >::push_back(int const&) [36]
+[76]     0.0   12.52    1.92   43598         std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+                0.00    1.91   43598/43598       std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [104]
+                0.00    0.00   43598/2607361016     __gnu_cxx::new_allocator<int>::construct(int*, int const&) [44]
+                0.00    0.00   43598/3419520959     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [41]
+                0.00    0.00   43598/3419561763     void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [61]
+                0.00    0.00   43598/7231200399     std::vector<int, std::allocator<int> >::begin() [55]
+                0.00    0.00  130794/3419689759     std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [80]
+                0.00    0.00   87196/17097561197     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [53]
+                0.00    0.00   87196/87196       int* std::__uninitialized_move_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [142]
+                0.00    0.00   43598/84398       std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [145]
+                0.00    0.00   43598/84402       std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [144]
+-----------------------------------------------
+               12.11    0.00   40800/40800       std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [78]
+[77]     0.0   12.11    0.00   40800         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [77]
+                0.00    0.00   40800/40800       std::allocator<int>::allocator(std::allocator<int> const&) [151]
+-----------------------------------------------
+                0.00   12.11   40800/40800       std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+[78]     0.0    0.00   12.11   40800         std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [78]
+               12.11    0.00   40800/40800       std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [77]
+                0.00    0.00   40800/84398       std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [145]
+-----------------------------------------------
+                2.24    0.00       1/5           SliceSampling::learn(int*, char*, int) [2]
+                4.47    0.00       2/5           main [1]
+                4.47    0.00       2/5           SliceSampling::mcmclearn(int) [32]
+[79]     0.0   11.18    0.00       5         Timer::printTime(std::ostream&, double const&) [79]
+-----------------------------------------------
+                0.00    0.00   40800/3419689759     std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+                0.00    0.00   40804/3419689759     std::vector<int, std::allocator<int> >::~vector() [84]
+                0.00    0.00  130794/3419689759     std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+                9.81    0.00 3419477361/3419689759     std::vector<int, std::allocator<int> >::_M_erase_at_end(int*) [50]
+[80]     0.0    9.81    0.00 3419689759         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [80]
+-----------------------------------------------
+                0.34    0.00 48606166/1387710363     SatProblem::unit(int, int) <cycle 1> [75]
+                9.45    0.00 1339104197/1387710363     SliceSampling::unitProc(int, int) [16]
+[81]     0.0    9.79    0.00 1387710363         SatProblem::setAtom(int, int) [81]
+-----------------------------------------------
+                6.17    2.67 2384041231/2384041231     SampleSAT::randomWalk() [10]
+[82]     0.0    6.17    2.67 2384041231         SatProblem::getCnj(int, int) [82]
+                2.67    0.00 2384041231/2384041231     SatProblem::getCnf(int) [101]
+-----------------------------------------------
+                7.62    0.00 3860285606/3860285606     SatProblem::rewriteOrUnit(int, int) <cycle 1> [22]
+[83]     0.0    7.62    0.00 3860285606         int const& std::max<int>(int const&, int const&) [83]
+-----------------------------------------------
+                0.00    0.00       4/40804       SatProblem::allocate() [65]
+                0.00    6.43   40800/40804       void std::_Destroy<std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*) [85]
+[84]     0.0    0.00    6.43   40804         std::vector<int, std::allocator<int> >::~vector() [84]
+                0.71    5.71   40804/40804       std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [89]
+                0.00    0.00   40804/3419561763     void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [61]
+                0.00    0.00   40804/3419689759     std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [80]
+-----------------------------------------------
+                0.00    6.43   40800/40800       void std::_Destroy_aux<false>::__destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [86]
+[85]     0.0    0.00    6.43   40800         void std::_Destroy<std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*) [85]
+                0.00    6.43   40800/40804       std::vector<int, std::allocator<int> >::~vector() [84]
+-----------------------------------------------
+                0.00    6.43       8/8           void std::_Destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [87]
+[86]     0.0    0.00    6.43       8         void std::_Destroy_aux<false>::__destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [86]
+                0.00    6.43   40800/40800       void std::_Destroy<std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*) [85]
+-----------------------------------------------
+                0.00    6.43       8/8           void std::_Destroy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [88]
+[87]     0.0    0.00    6.43       8         void std::_Destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [87]
+                0.00    6.43       8/8           void std::_Destroy_aux<false>::__destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [86]
+-----------------------------------------------
+                0.00    3.21       4/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector() [96]
+                0.00    3.21       4/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[88]     0.0    0.00    6.43       8         void std::_Destroy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [88]
+                0.00    6.43       8/8           void std::_Destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [87]
+-----------------------------------------------
+                0.71    5.71   40804/40804       std::vector<int, std::allocator<int> >::~vector() [84]
+[89]     0.0    0.71    5.71   40804         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [89]
+                0.00    5.71   40804/40804       std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [93]
+                0.00    0.00   40804/84402       std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [144]
+-----------------------------------------------
+                6.05    0.00   40800/40800       int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&) [91]
+[90]     0.0    6.05    0.00   40800         int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [90]
+                0.00    0.00   40800/40800       int* std::__uninitialized_copy<true>::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [124]
+-----------------------------------------------
+                0.00    6.05   40800/40800       std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+[91]     0.0    0.00    6.05   40800         int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&) [91]
+                6.05    0.00   40800/40800       int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [90]
+-----------------------------------------------
+                2.81    2.90   40804/40804       std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [93]
+[92]     0.0    2.81    2.90   40804         std::allocator<int>::~allocator() [92]
+                2.90    0.00   40804/40804       __gnu_cxx::new_allocator<int>::~new_allocator() [98]
+-----------------------------------------------
+                0.00    5.71   40804/40804       std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [89]
+[93]     0.0    0.00    5.71   40804         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [93]
+                2.81    2.90   40804/40804       std::allocator<int>::~allocator() [92]
+-----------------------------------------------
+                5.47    0.00 3419561763/3419561763     void std::_Destroy<int*>(int*, int*) [67]
+[94]     0.0    5.47    0.00 3419561763         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [94]
+-----------------------------------------------
+                                                 <spontaneous>
+[95]     0.0    5.11    0.00                 SatProblem::getRealProb(int) [95]
+-----------------------------------------------
+                0.00    3.21       4/4           SatProblem::~SatProblem() [97]
+[96]     0.0    0.00    3.21       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector() [96]
+                0.00    3.21       4/8           void std::_Destroy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [88]
+                0.00    0.00       4/20          std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator() [154]
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~_Vector_base() [179]
+-----------------------------------------------
+                0.00    3.21       1/1           main [1]
+[97]     0.0    0.00    3.21       1         SatProblem::~SatProblem() [97]
+                0.00    3.21       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector() [96]
+-----------------------------------------------
+                2.90    0.00   40804/40804       std::allocator<int>::~allocator() [92]
+[98]     0.0    2.90    0.00   40804         __gnu_cxx::new_allocator<int>::~new_allocator() [98]
+-----------------------------------------------
+                                                 <spontaneous>
+[99]     0.0    2.82    0.00                 __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > std::copy<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [99]
+-----------------------------------------------
+                0.89    0.00   40800/127996      std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) [74]
+                1.91    0.00   87196/127996      std::vector<int, std::allocator<int> >::max_size() const [105]
+[100]    0.0    2.80    0.00  127996         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [100]
+-----------------------------------------------
+                2.67    0.00 2384041231/2384041231     SatProblem::getCnj(int, int) [82]
+[101]    0.0    2.67    0.00 2384041231         SatProblem::getCnf(int) [101]
+-----------------------------------------------
+                1.25    0.00       1/2           main [1]
+                1.25    0.00       1/2           SliceSampling::~SliceSampling() [106]
+[102]    0.0    2.49    0.00       2         Timer::~Timer() [102]
+-----------------------------------------------
+                                                 <spontaneous>
+[103]    0.0    2.26    0.00                 SliceSampling::calclik(int) [103]
+-----------------------------------------------
+                0.00    1.91   43598/43598       std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+[104]    0.0    0.00    1.91   43598         std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [104]
+                0.00    1.91   87196/87196       std::vector<int, std::allocator<int> >::max_size() const [105]
+                0.00    0.00  174392/36392847147     std::vector<int, std::allocator<int> >::size() const [24]
+                0.00    0.00   43598/43602       unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [147]
+-----------------------------------------------
+                0.00    1.91   87196/87196       std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [104]
+[105]    0.0    0.00    1.91   87196         std::vector<int, std::allocator<int> >::max_size() const [105]
+                1.91    0.00   87196/127996      std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [100]
+                0.00    0.00   87196/130794      __gnu_cxx::new_allocator<int>::max_size() const [135]
+-----------------------------------------------
+                0.00    1.25       1/1           main [1]
+[106]    0.0    0.00    1.25       1         SliceSampling::~SliceSampling() [106]
+                1.25    0.00       1/2           Timer::~Timer() [102]
+-----------------------------------------------
+                                                 <spontaneous>
+[107]    0.0    0.99    0.00                 SatProblem::getClause(int) [107]
+-----------------------------------------------
+                0.04    0.00 51424650/569486937     SampleSAT::randomWalk() [10]
+                0.08    0.00 102873999/569486937     SampleSAT::simAnnealing() [14]
+                0.16    0.00 197036816/569486937     SampleSAT::walk() [6]
+                0.17    0.00 218151472/569486937     SampleSAT::greedyWalk() [7]
+[108]    0.0    0.45    0.00 569486937         SatProblem::getNumSat() [108]
+-----------------------------------------------
+                0.08    0.00 51405671/197036816     SampleSAT::randomWalk() [10]
+                0.08    0.00 51433164/197036816     SampleSAT::greedyWalk() [7]
+                0.14    0.00 94197981/197036816     SampleSAT::simAnnealing() [14]
+[109]    0.0    0.29    0.00 197036816         SatProblem::addNumSat(int) [109]
+-----------------------------------------------
+                0.09    0.00       1/1           main [1]
+[110]    0.0    0.09    0.00       1         SatProblem::parseSliFile(char*) [110]
+-----------------------------------------------
+                0.08    0.00 102873999/102873999     SampleSAT::simAnnealing() [14]
+[111]    0.0    0.08    0.00 102873999         SampleSAT::getTemp() [111]
+-----------------------------------------------
+                0.04    0.00    1000/1000        SliceSampling::mcmclearn(int) [32]
+[112]    0.0    0.04    0.00    1000         SatProblem::updateTheta(double*) [112]
+-----------------------------------------------
+                0.04    0.01       1/1           SliceSampling::mcmclearn(int) [32]
+[113]    0.0    0.04    0.01       1         global constructors keyed to _ZN10SatProblemC2Em [113]
+                0.01    0.00       1/1           __static_initialization_and_destruction_0(int, int) [120]
+-----------------------------------------------
+                0.03    0.00       4/4           SatProblem::SatProblem(unsigned long) [56]
+[114]    0.0    0.03    0.00       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::vector() [114]
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_base() [178]
+-----------------------------------------------
+                0.03    0.00       1/1           SliceSampling::learn(int*, char*, int) [2]
+[115]    0.0    0.03    0.00       1         SliceSampling::lallocate(int) [115]
+-----------------------------------------------
+                                                 <spontaneous>
+[116]    0.0    0.03    0.00                 SampleSAT::init() [116]
+-----------------------------------------------
+                                                 <spontaneous>
+[117]    0.0    0.03    0.00                 __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::operator++() [117]
+-----------------------------------------------
+                                                 <spontaneous>
+[118]    0.0    0.02    0.00                 std::__miter_base<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, false>::__b(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >) [118]
+-----------------------------------------------
+                                                 <spontaneous>
+[119]    0.0    0.01    0.00                 SatProblem::show() [119]
+-----------------------------------------------
+                0.01    0.00       1/1           global constructors keyed to _ZN10SatProblemC2Em [113]
+[120]    0.0    0.01    0.00       1         __static_initialization_and_destruction_0(int, int) [120]
+-----------------------------------------------
+                                                 <spontaneous>
+[121]    0.0    0.01    0.00                 SatProblem::getCnfij(int, int) [121]
+-----------------------------------------------
+                                                 <spontaneous>
+[122]    0.0    0.01    0.00                 SliceSampling::getSample(SatProblem*, int, int*) [122]
+-----------------------------------------------
+                0.00    0.00   81600/81600       int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [125]
+[123]    0.0    0.00    0.00   81600         std::__niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, true>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) [123]
+                0.00    0.00   81600/2539690402     __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const [60]
+-----------------------------------------------
+                0.00    0.00   40800/40800       int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [90]
+[124]    0.0    0.00    0.00   40800         int* std::__uninitialized_copy<true>::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [124]
+                0.00    0.00   40800/40800       int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [126]
+-----------------------------------------------
+                0.00    0.00   40800/40800       int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [126]
+[125]    0.0    0.00    0.00   40800         int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [125]
+                0.00    0.00   81600/81600       std::__niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, true>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) [123]
+                0.00    0.00   40800/302388      std::__niter_base<int*, false>::__b(int*) [133]
+                0.00    0.00   40800/40800       int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*) [152]
+-----------------------------------------------
+                0.00    0.00   40800/40800       int* std::__uninitialized_copy<true>::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [124]
+[126]    0.0    0.00    0.00   40800         int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [126]
+                0.00    0.00   40800/40800       int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [125]
+                0.00    0.00   81600/81600       std::__miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, false>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) [146]
+-----------------------------------------------
+                0.00    0.00       1/1           SliceSampling::SliceSampling(SampleSAT*, SatProblem*, learnparams*) [128]
+[127]    0.0    0.00    0.00       1         SliceSampling::init() [127]
+                0.00    0.00       1/16742354555     SatProblem::getNumVariables() [20]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[128]    0.0    0.00    0.00       1         SliceSampling::SliceSampling(SampleSAT*, SatProblem*, learnparams*) [128]
+                0.00    0.00       1/1           SliceSampling::init() [127]
+                0.00    0.00       1/2           Timer::Timer() [185]
+-----------------------------------------------
+                0.00    0.00 2000000/2000000     SliceSampling::sampleX() [4]
+[132]    0.0    0.00    0.00 2000000         SatProblem::getNumFixedClause() [132]
+-----------------------------------------------
+                0.00    0.00   40800/302388      int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [125]
+                0.00    0.00  261588/302388      int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [139]
+[133]    0.0    0.00    0.00  302388         std::__niter_base<int*, false>::__b(int*) [133]
+-----------------------------------------------
+                0.00    0.00  174392/174392      int* std::copy<int*, int*>(int*, int*, int*) [143]
+[134]    0.0    0.00    0.00  174392         std::__miter_base<int*, false>::__b(int*) [134]
+-----------------------------------------------
+                0.00    0.00   43598/130794      __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [149]
+                0.00    0.00   87196/130794      std::vector<int, std::allocator<int> >::max_size() const [105]
+[135]    0.0    0.00    0.00  130794         __gnu_cxx::new_allocator<int>::max_size() const [135]
+-----------------------------------------------
+                0.00    0.00   40800/127996      int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*) [152]
+                0.00    0.00   87196/127996      int* std::__copy_move_a<false, int*, int*>(int*, int*, int*) [138]
+[136]    0.0    0.00    0.00  127996         int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [136]
+-----------------------------------------------
+                0.00    0.00   87196/87196       int* std::uninitialized_copy<int*, int*>(int*, int*, int*) [140]
+[137]    0.0    0.00    0.00   87196         int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*) [137]
+                0.00    0.00   87196/87196       int* std::copy<int*, int*>(int*, int*, int*) [143]
+-----------------------------------------------
+                0.00    0.00   87196/87196       int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [139]
+[138]    0.0    0.00    0.00   87196         int* std::__copy_move_a<false, int*, int*>(int*, int*, int*) [138]
+                0.00    0.00   87196/127996      int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [136]
+-----------------------------------------------
+                0.00    0.00   87196/87196       int* std::copy<int*, int*>(int*, int*, int*) [143]
+[139]    0.0    0.00    0.00   87196         int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [139]
+                0.00    0.00  261588/302388      std::__niter_base<int*, false>::__b(int*) [133]
+                0.00    0.00   87196/87196       int* std::__copy_move_a<false, int*, int*>(int*, int*, int*) [138]
+-----------------------------------------------
+                0.00    0.00   87196/87196       int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&) [141]
+[140]    0.0    0.00    0.00   87196         int* std::uninitialized_copy<int*, int*>(int*, int*, int*) [140]
+                0.00    0.00   87196/87196       int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*) [137]
+-----------------------------------------------
+                0.00    0.00   87196/87196       int* std::__uninitialized_move_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [142]
+[141]    0.0    0.00    0.00   87196         int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&) [141]
+                0.00    0.00   87196/87196       int* std::uninitialized_copy<int*, int*>(int*, int*, int*) [140]
+-----------------------------------------------
+                0.00    0.00   87196/87196       std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+[142]    0.0    0.00    0.00   87196         int* std::__uninitialized_move_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [142]
+                0.00    0.00   87196/87196       int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&) [141]
+-----------------------------------------------
+                0.00    0.00   87196/87196       int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*) [137]
+[143]    0.0    0.00    0.00   87196         int* std::copy<int*, int*>(int*, int*, int*) [143]
+                0.00    0.00  174392/174392      std::__miter_base<int*, false>::__b(int*) [134]
+                0.00    0.00   87196/87196       int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [139]
+-----------------------------------------------
+                0.00    0.00   40804/84402       std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [89]
+                0.00    0.00   43598/84402       std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+[144]    0.0    0.00    0.00   84402         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [144]
+                0.00    0.00   43598/43598       __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int) [148]
+-----------------------------------------------
+                0.00    0.00   40800/84398       std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) [78]
+                0.00    0.00   43598/84398       std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [76]
+[145]    0.0    0.00    0.00   84398         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [145]
+                0.00    0.00   43598/43598       __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [149]
+-----------------------------------------------
+                0.00    0.00   81600/81600       int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [126]
+[146]    0.0    0.00    0.00   81600         std::__miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, false>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) [146]
+-----------------------------------------------
+                0.00    0.00       4/43602       std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_check_len(unsigned int, char const*) const [171]
+                0.00    0.00   43598/43602       std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [104]
+[147]    0.0    0.00    0.00   43602         unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [147]
+-----------------------------------------------
+                0.00    0.00   43598/43598       std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int) [144]
+[148]    0.0    0.00    0.00   43598         __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int) [148]
+-----------------------------------------------
+                0.00    0.00   43598/43598       std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) [145]
+[149]    0.0    0.00    0.00   43598         __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [149]
+                0.00    0.00   43598/130794      __gnu_cxx::new_allocator<int>::max_size() const [135]
+-----------------------------------------------
+                0.00    0.00   40800/40800       std::allocator<int>::allocator(std::allocator<int> const&) [151]
+[150]    0.0    0.00    0.00   40800         __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [150]
+-----------------------------------------------
+                0.00    0.00   40800/40800       std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [77]
+[151]    0.0    0.00    0.00   40800         std::allocator<int>::allocator(std::allocator<int> const&) [151]
+                0.00    0.00   40800/40800       __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [150]
+-----------------------------------------------
+                0.00    0.00   40800/40800       int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*) [125]
+[152]    0.0    0.00    0.00   40800         int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*) [152]
+                0.00    0.00   40800/127996      int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [136]
+-----------------------------------------------
+                0.00    0.00       8/24          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned int, std::vector<int, std::allocator<int> >) [66]
+                0.00    0.00      16/24          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_check_len(unsigned int, char const*) const [171]
+[153]    0.0    0.00    0.00      24         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::size() const [153]
+-----------------------------------------------
+                0.00    0.00       4/20          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector() [96]
+                0.00    0.00      16/20          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[154]    0.0    0.00    0.00      20         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator() [154]
+-----------------------------------------------
+                0.00    0.00       8/16          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+                0.00    0.00       8/16          __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::difference_type __gnu_cxx::operator-<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&) [170]
+[155]    0.0    0.00    0.00      16         __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::base() const [155]
+-----------------------------------------------
+                0.00    0.00       4/12          __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned int, void const*) [166]
+                0.00    0.00       8/12          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::max_size() const [159]
+[156]    0.0    0.00    0.00      12         __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::max_size() const [156]
+-----------------------------------------------
+                0.00    0.00       4/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::end() [182]
+                0.00    0.00       4/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::begin() [183]
+[157]    0.0    0.00    0.00       8         __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::__normal_iterator(std::vector<int, std::allocator<int> >* const&) [157]
+-----------------------------------------------
+                0.00    0.00       8/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::max_size() const [159]
+[158]    0.0    0.00    0.00       8         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator() const [158]
+-----------------------------------------------
+                0.00    0.00       8/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_check_len(unsigned int, char const*) const [171]
+[159]    0.0    0.00    0.00       8         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::max_size() const [159]
+                0.00    0.00       8/8           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator() const [158]
+                0.00    0.00       8/12          __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::max_size() const [156]
+-----------------------------------------------
+                0.00    0.00       4/8           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~_Vector_base() [179]
+                0.00    0.00       4/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[160]    0.0    0.00    0.00       8         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [160]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [165]
+-----------------------------------------------
+                0.00    0.00       8/8           std::vector<int, std::allocator<int> >* std::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [162]
+[161]    0.0    0.00    0.00       8         std::vector<int, std::allocator<int> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [161]
+-----------------------------------------------
+                0.00    0.00       8/8           std::vector<int, std::allocator<int> >* std::__uninitialized_copy_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [163]
+[162]    0.0    0.00    0.00       8         std::vector<int, std::allocator<int> >* std::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [162]
+                0.00    0.00       8/8           std::vector<int, std::allocator<int> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [161]
+-----------------------------------------------
+                0.00    0.00       8/8           std::vector<int, std::allocator<int> >* std::__uninitialized_move_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [164]
+[163]    0.0    0.00    0.00       8         std::vector<int, std::allocator<int> >* std::__uninitialized_copy_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [163]
+                0.00    0.00       8/8           std::vector<int, std::allocator<int> >* std::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [162]
+-----------------------------------------------
+                0.00    0.00       8/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[164]    0.0    0.00    0.00       8         std::vector<int, std::allocator<int> >* std::__uninitialized_move_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [164]
+                0.00    0.00       8/8           std::vector<int, std::allocator<int> >* std::__uninitialized_copy_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&) [163]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [160]
+[165]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [165]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned int) [175]
+[166]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned int, void const*) [166]
+                0.00    0.00       4/12          __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::max_size() const [156]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator<std::vector<int, std::allocator<int> > >::allocator() [172]
+[167]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::new_allocator() [167]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator<std::vector<int, std::allocator<int> > >::~allocator() [173]
+[168]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::~new_allocator() [168]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator<int>::allocator() [174]
+[169]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<int>::new_allocator() [169]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[170]    0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::difference_type __gnu_cxx::operator-<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&) [170]
+                0.00    0.00       8/16          __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::base() const [155]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[171]    0.0    0.00    0.00       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_check_len(unsigned int, char const*) const [171]
+                0.00    0.00      16/24          std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::size() const [153]
+                0.00    0.00       8/8           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::max_size() const [159]
+                0.00    0.00       4/43602       unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [147]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl() [176]
+[172]    0.0    0.00    0.00       4         std::allocator<std::vector<int, std::allocator<int> > >::allocator() [172]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::new_allocator() [167]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::~_Vector_impl() [177]
+[173]    0.0    0.00    0.00       4         std::allocator<std::vector<int, std::allocator<int> > >::~allocator() [173]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::~new_allocator() [168]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [180]
+[174]    0.0    0.00    0.00       4         std::allocator<int>::allocator() [174]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<int>::new_allocator() [169]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[175]    0.0    0.00    0.00       4         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned int) [175]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned int, void const*) [166]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_base() [178]
+[176]    0.0    0.00    0.00       4         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl() [176]
+                0.00    0.00       4/4           std::allocator<std::vector<int, std::allocator<int> > >::allocator() [172]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~_Vector_base() [179]
+[177]    0.0    0.00    0.00       4         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::~_Vector_impl() [177]
+                0.00    0.00       4/4           std::allocator<std::vector<int, std::allocator<int> > >::~allocator() [173]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::vector() [114]
+[178]    0.0    0.00    0.00       4         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_base() [178]
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl() [176]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector() [96]
+[179]    0.0    0.00    0.00       4         std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~_Vector_base() [179]
+                0.00    0.00       4/8           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [160]
+                0.00    0.00       4/4           std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::~_Vector_impl() [177]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [181]
+[180]    0.0    0.00    0.00       4         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [180]
+                0.00    0.00       4/4           std::allocator<int>::allocator() [174]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<int, std::allocator<int> >::vector() [184]
+[181]    0.0    0.00    0.00       4         std::_Vector_base<int, std::allocator<int> >::_Vector_base() [181]
+                0.00    0.00       4/4           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [180]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned int, std::vector<int, std::allocator<int> >) [66]
+[182]    0.0    0.00    0.00       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::end() [182]
+                0.00    0.00       4/8           __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::__normal_iterator(std::vector<int, std::allocator<int> >* const&) [157]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&) [68]
+[183]    0.0    0.00    0.00       4         std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::begin() [183]
+                0.00    0.00       4/8           __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::__normal_iterator(std::vector<int, std::allocator<int> >* const&) [157]
+-----------------------------------------------
+                0.00    0.00       4/4           SatProblem::allocate() [65]
+[184]    0.0    0.00    0.00       4         std::vector<int, std::allocator<int> >::vector() [184]
+                0.00    0.00       4/4           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [181]
+-----------------------------------------------
+                0.00    0.00       1/2           main [1]
+                0.00    0.00       1/2           SliceSampling::SliceSampling(SampleSAT*, SatProblem*, learnparams*) [128]
+[185]    0.0    0.00    0.00       2         Timer::Timer() [185]
+-----------------------------------------------
+                0.00    0.00       1/1           SliceSampling::mcmclearn(int) [32]
+[186]    0.0    0.00    0.00       1         global constructors keyed to _ZN9SampleSATC2EP10SatProblemP15samplesatparams [186]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [191]
+-----------------------------------------------
+                0.00    0.00       1/1           SliceSampling::mcmclearn(int) [32]
+[187]    0.0    0.00    0.00       1         global constructors keyed to cnffilename [187]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [190]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[188]    0.0    0.00    0.00       1         printlParameters(learnparams*) [188]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[189]    0.0    0.00    0.00       1         printssParameters(samplesatparams*) [189]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to cnffilename [187]
+[190]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [190]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN9SampleSATC2EP10SatProblemP15samplesatparams [186]
+[191]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [191]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[192]    0.0    0.00    0.00       1         SatProblem::parseProbFile(char*) [192]
+-----------------------------------------------
+                0.00    0.00       1/1           SatProblem::SatProblem(unsigned long) [56]
+[193]    0.0    0.00    0.00       1         Random::sgenrand(unsigned long) [193]
+-----------------------------------------------
+                0.00    0.00       1/1           SatProblem::SatProblem(unsigned long) [56]
+[194]    0.0    0.00    0.00       1         Random::Random() [194]
+-----------------------------------------------
+                0.00    0.00       1/1           SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [200]
+[195]    0.0    0.00    0.00       1         SampleSAT::setWalkMax(int) [195]
+-----------------------------------------------
+                0.00    0.00       1/1           SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [200]
+[196]    0.0    0.00    0.00       1         SampleSAT::setNumSample(int) [196]
+-----------------------------------------------
+                0.00    0.00       1/1           SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [200]
+[197]    0.0    0.00    0.00       1         SampleSAT::setTemperature(double) [197]
+-----------------------------------------------
+                0.00    0.00       1/1           SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [200]
+[198]    0.0    0.00    0.00       1         SampleSAT::setWalkSatProb(double) [198]
+-----------------------------------------------
+                0.00    0.00       1/1           SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [200]
+[199]    0.0    0.00    0.00       1         SampleSAT::setRandomWalkProb(double) [199]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[200]    0.0    0.00    0.00       1         SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [200]
+                0.00    0.00       1/1           SampleSAT::setWalkMax(int) [195]
+                0.00    0.00       1/1           SampleSAT::setNumSample(int) [196]
+                0.00    0.00       1/1           SampleSAT::setWalkSatProb(double) [198]
+                0.00    0.00       1/1           SampleSAT::setRandomWalkProb(double) [199]
+                0.00    0.00       1/1           SampleSAT::setTemperature(double) [197]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[201]    0.0    0.00    0.00       1         SampleSAT::~SampleSAT() [201]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+ [113] global constructors keyed to _ZN10SatProblemC2Em (satproblem.cpp) [27] Random::genrand() [178] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_base()
+ [186] global constructors keyed to _ZN9SampleSATC2EP10SatProblemP15samplesatparams (samplesat.cpp) [193] Random::sgenrand(unsigned long) [179] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~_Vector_base()
+ [187] global constructors keyed to cnffilename (csslearn.cpp) [194] Random::Random() [145] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int)
+ [188] printlParameters(learnparams*) [7] SampleSAT::greedyWalk() [77] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+ [189] printssParameters(samplesatparams*) [21] SampleSAT::init_model() [180] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+ [190] __static_initialization_and_destruction_0(int, int) (csslearn.cpp) [10] SampleSAT::randomWalk() [93] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+ [120] __static_initialization_and_destruction_0(int, int) (satproblem.cpp) [195] SampleSAT::setWalkMax(int) [144] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned int)
+ [191] __static_initialization_and_destruction_0(int, int) (samplesat.cpp) [196] SampleSAT::setNumSample(int) [80] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  [42] SatProblem::cpClVector() [14] SampleSAT::simAnnealing() [78] std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&)
+  [63] SatProblem::getCnjSize(int) [197] SampleSAT::setTemperature(double) [181] std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  [52] SatProblem::getNegWLij(int, int) [198] SampleSAT::setWalkSatProb(double) [89] std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  [11] SatProblem::initParams() [199] SampleSAT::setRandomWalkProb(double) [146] std::__miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, false>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+  [95] SatProblem::getRealProb(int) [116] SampleSAT::init() [118] std::__miter_base<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, false>::__b(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >)
+  [26] SatProblem::setWatchIdx(int, int, int) [6] SampleSAT::walk() [134] std::__miter_base<int*, false>::__b(int*)
+ [112] SatProblem::updateTheta(double*) [5] SampleSAT::solve(SatProblem*, int*) [123] std::__niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, true>::__b(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+  [33] SatProblem::getClVecSize() [111] SampleSAT::getTemp() [133] std::__niter_base<int*, false>::__b(int*)
+  [17] SatProblem::initSatCheck(int*) [200] SampleSAT::SampleSAT(SatProblem*, samplesatparams*) [161] std::vector<int, std::allocator<int> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+  [64] SatProblem::parseCnfFile(char*) [201] SampleSAT::~SampleSAT() [124] int* std::__uninitialized_copy<true>::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+ [110] SatProblem::parseSliFile(char*) [165] __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [137] int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*)
+  [45] SatProblem::getNumClauses() [166] __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned int, void const*) [71] void std::__uninitialized_fill_n<false>::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&)
+ [192] SatProblem::parseProbFile(char*) [167] __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::new_allocator() [68] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&)
+  [22] SatProblem::rewriteOrUnit(int, int) [168] __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::~new_allocator() [182] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::end()
+  [29] SatProblem::getFixedClausei(int) [148] __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned int) [183] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::begin()
+  [51] SatProblem::getNumFixedAtom() [149] __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) [69] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned int, std::vector<int, std::allocator<int> > const&)
+  [20] SatProblem::getNumVariables() [44] __gnu_cxx::new_allocator<int>::construct(int*, int const&) [66] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned int, std::vector<int, std::allocator<int> >)
+ [132] SatProblem::getNumFixedClause() [150] __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [114] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::vector()
+ [119] SatProblem::show()    [169] __gnu_cxx::new_allocator<int>::new_allocator() [96] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector()
+  [75] SatProblem::unit(int, int) [98] __gnu_cxx::new_allocator<int>::~new_allocator() [15] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned int)
+ [101] SatProblem::getCnf(int) [58] __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&) [76] std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  [82] SatProblem::getCnj(int, int) [157] __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::__normal_iterator(std::vector<int, std::allocator<int> >* const&) [50] std::vector<int, std::allocator<int> >::_M_erase_at_end(int*)
+  [34] SatProblem::getVar(int) [59] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [49] std::vector<int, std::allocator<int> >::end()
+  [13] SatProblem::getNsc1(int*, int) [57] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator() [55] std::vector<int, std::allocator<int> >::begin()
+   [8] SatProblem::getNsc2(int*, int) [117] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::operator++() [31] std::vector<int, std::allocator<int> >::erase(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >)
+  [81] SatProblem::setAtom(int, int) [43] bool __gnu_cxx::operator==<int const*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > const&) [36] std::vector<int, std::allocator<int> >::push_back(int const&)
+  [65] SatProblem::allocate() [170] __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::difference_type __gnu_cxx::operator-<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > const&) [74] std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+  [28] SatProblem::getClVec(int) [41] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [184] std::vector<int, std::allocator<int> >::vector()
+ [121] SatProblem::getCnfij(int, int) [54] bool __gnu_cxx::operator!=<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [84] std::vector<int, std::allocator<int> >::~vector()
+  [23] SatProblem::getGrand() [156] __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::max_size() const [18] std::vector<int, std::allocator<int> >::operator[](unsigned int)
+  [48] SatProblem::getTheta(int) [135] __gnu_cxx::new_allocator<int>::max_size() const [70] void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&)
+   [9] SatProblem::isSatCnj(int*, int) [60] __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const [152] int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*)
+ [109] SatProblem::addNumSat(int) [155] __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >::base() const [138] int* std::__copy_move_a<false, int*, int*>(int*, int*, int*)
+  [12] SatProblem::afterFlip(int*, int) [53] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [125] int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+ [107] SatProblem::getClause(int) [158] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator() const [139] int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*)
+ [108] SatProblem::getNumSat() [100] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [90] int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+  [37] SatProblem::rewriteWL(int, int) [171] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_check_len(unsigned int, char const*) const [162] std::vector<int, std::allocator<int> >* std::uninitialized_copy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+  [35] SatProblem::setClause(int, int) [153] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::size() const [140] int* std::uninitialized_copy<int*, int*>(int*, int*, int*)
+  [39] SatProblem::walkIsSat(int*, int) [159] std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::max_size() const [72] void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&)
+  [56] SatProblem::SatProblem(unsigned long) [104] std::vector<int, std::allocator<int> >::_M_check_len(unsigned int, char const*) const [91] int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&)
+  [97] SatProblem::~SatProblem() [46] std::vector<int, std::allocator<int> >::end() const [163] std::vector<int, std::allocator<int> >* std::__uninitialized_copy_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&)
+ [127] SliceSampling::init()  [24] std::vector<int, std::allocator<int> >::size() const [141] int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&)
+   [2] SliceSampling::learn(int*, char*, int) [47] std::vector<int, std::allocator<int> >::begin() const [164] std::vector<int, std::allocator<int> >* std::__uninitialized_move_a<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&)
+ [103] SliceSampling::calclik(int) [30] std::vector<int, std::allocator<int> >::empty() const [142] int* std::__uninitialized_move_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+   [3] SliceSampling::cdlearn(int) [105] std::vector<int, std::allocator<int> >::max_size() const [73] void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned int, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&)
+  [25] SliceSampling::sampleU() [172] std::allocator<std::vector<int, std::allocator<int> > >::allocator() [83] int const& std::max<int>(int const&, int const&)
+   [4] SliceSampling::sampleX() [173] std::allocator<std::vector<int, std::allocator<int> > >::~allocator() [147] unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  [40] SliceSampling::readdata(char*) [151] std::allocator<int>::allocator(std::allocator<int> const&) [126] int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+  [16] SliceSampling::unitProc(int, int) [174] std::allocator<int>::allocator() [99] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > std::copy<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >)
+ [122] SliceSampling::getSample(SatProblem*, int, int*) [92] std::allocator<int>::~allocator() [143] int* std::copy<int*, int*>(int*, int*, int*)
+ [115] SliceSampling::lallocate(int) [136] int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [87] void std::_Destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*)
+  [32] SliceSampling::mcmclearn(int) [86] void std::_Destroy_aux<false>::__destroy<std::vector<int, std::allocator<int> >*>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*) [88] void std::_Destroy<std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> >*, std::allocator<std::vector<int, std::allocator<int> > >&)
+ [128] SliceSampling::SliceSampling(SampleSAT*, SatProblem*, learnparams*) [94] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [67] void std::_Destroy<int*>(int*, int*)
+ [106] SliceSampling::~SliceSampling() [175] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned int) [61] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  [38] Timer::time()         [176] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::_Vector_impl() [85] void std::_Destroy<std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*)
+  [79] Timer::printTime(std::ostream&, double const&) [177] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_Vector_impl::~_Vector_impl() [62] operator new(unsigned int, void*)
+ [185] Timer::Timer()        [160] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_deallocate(std::vector<int, std::allocator<int> >*, unsigned int) [19] <cycle 1>
+ [102] Timer::~Timer()       [154] std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_get_Tp_allocator()

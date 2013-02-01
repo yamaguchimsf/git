@@ -1,0 +1,54 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00     4164     0.00     0.00  SampleSAT::SampleSAT(SatProblem*, samplesatparams*)
+  0.00      0.00     0.00      334     0.00     0.00  SatProblem::isSatCnj(int*, int)
+  0.00      0.00     0.00      268     0.00     0.00  Random::genrand()
+  0.00      0.00     0.00      212     0.00     0.00  SatProblem::isSat(int*)
+  0.00      0.00     0.00       82     0.00     0.00  _fini
+  0.00      0.00     0.00       41     0.00     0.00  SampleSAT::greedyWalk()
+  0.00      0.00     0.00       26     0.00     0.00  SatProblem::getNsc(int*)
+  0.00      0.00     0.00       18     0.00     0.00  __libc_csu_init
+  0.00      0.00     0.00       17     0.00     0.00  Timer::printTime(std::ostream&, double const&)
+  0.00      0.00     0.00       13     0.00     0.00  SatProblem::getVar(int)
+  0.00      0.00     0.00       11     0.00     0.00  SampleSAT::init_model()
+  0.00      0.00     0.00       10     0.00     0.00  SliceSampling::~SliceSampling()
+  0.00      0.00     0.00       10     0.00     0.00  SampleSAT::randomWalk()
+  0.00      0.00     0.00        4     0.00     0.00  SampleSAT::solve(SatProblem*)
+  0.00      0.00     0.00        2     0.00     0.00  SatProblem::~SatProblem()
+  0.00      0.00     0.00        1     0.00     0.00  printParameters(samplesatparams*)
+  0.00      0.00     0.00        1     0.00     0.00  SatProblem::parseCnfFile(char*)
+  0.00      0.00     0.00        1     0.00     0.00  SatProblem::parseProbFile(char*, std::basic_ofstream<char, std::char_traits<char> >&)
+  0.00      0.00     0.00        1     0.00     0.00  SatProblem::allocate()
+  0.00      0.00     0.00        1     0.00     0.00  SampleSAT::init()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
