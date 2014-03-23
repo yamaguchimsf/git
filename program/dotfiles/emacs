@@ -14,8 +14,7 @@
 ;;frame settings
 (setq initial-frame-alist
  (append
- '((width . 235)
- (height . 64)
+ '((width .  (height . 64)
  (left . 1)
  (top . 1)
  )initial-frame-alist))
@@ -84,3 +83,4 @@ major-mode
 
 (put 'upcase-region 'disabled nil)
 
+(global-set-key "\C-h" 'backward-delete-char)
