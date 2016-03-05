@@ -1,4 +1,6 @@
-- settings
+# git
+
+## 手順
 
 1. create dir
 2. git initでリポジトリ作成
@@ -7,4 +9,10 @@
 5. git push
 (次に始めるとき)
 6. git fetch, git pull
+
+## 概要
+
+### dotfiles
+
+各種設定ファイルなど
 
