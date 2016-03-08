@@ -15,9 +15,9 @@ import org.apache.spark.rdd.RDD
 object MllibTest {
 
   case class Params(
-    //input: String = "/user/cti/mllib_input/sample_lda_data.txt",
+    //input: String = "/user/masahiro/mllib_input/sample_lda_data.txt",
     input: Seq[String] = Seq.empty,
-    //input: String = "/user/cti/mllib_input/docword.kos.txt.gz",
+    //input: String = "/user/masahiro/mllib_input/docword.kos.txt.gz",
     lambda: Double = 1.0,
     algorithm: String = "em",
     vocabSize: Int = 10000,
