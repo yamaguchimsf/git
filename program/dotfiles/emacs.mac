@@ -1,6 +1,6 @@
 ;;;; -*- Emacs-Lisp -*-
 ;;;; Basic Configuration for Emacs 21/22
-;;;;
+;;;>;
 
 
 ;;;;original
@@ -12,25 +12,25 @@
 (show-paren-mode 1)
 
 ;;frame settings
-(setq initial-frame-alist
- (append
- '((width .  (height . 64)
- (left . 1)
- (top . 1)
- )initial-frame-alist))
+;; (setq initial-frame-alist
+;;  (append
+;;  '((width .  (height . 64)
+;;  (left . 1)
+;;  (top . 1)
+;;  )initial-frame-alist))
 ;(setq default-frame-alist initial-frame-alist)
 ;(set-frame-parameter nil 'fullscreen 'fullboth)
 
 ;;; fullscreen
 ;(set-frame-parameter nil 'fullscreen 'fullboth)
 
-;;;; not change background color
+;; ;;;; not change background color
 (transient-mark-mode 0)
 
-;; not make ~ files
+;; ;; not make ~ files
 (setq backup-inhibited t)
 
-;;color settings
+;; ;;color settings
 (if window-system (progn
 (add-to-list 'default-frame-alist '(foreground-color . "White"))
 (add-to-list 'default-frame-alist '(background-color . "DarkGreen"))
@@ -49,10 +49,10 @@
 (set-face-bold-p 'font-lock-function-name-face t)
 ))
 
-;;location of scroll bar
+;; ;;location of scroll bar
 (set-scroll-bar-mode nil)
 
-;;display on scroll bar
+;; ;;display on scroll bar
 (display-time-mode 1)
 (line-number-mode 1)
 (column-number-mode 1)
@@ -75,12 +75,12 @@ major-mode
 (ad-enable-advice 'font-lock-mode 'before 'my-font-lock-mode)
 (ad-activate 'font-lock-mode)
 
-(setq-default tab-width 2 indent-tabs-mode nil)
+;(setq-default tab-width 2 indent-tabs-mode nil)
 
-;;; reverse action of C-x o
+;; reverse action of C-x o
 (define-key ctl-x-map "p"
 #'(lambda (arg) (interactive "p") (other-window (- arg))))
 
-(put 'upcase-region 'disabled nil)
+;; (put 'upcase-region 'disabled nil)
 
 (global-set-key "\C-h" 'backward-delete-char)
