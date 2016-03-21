@@ -35,4 +35,4 @@ sudo -u hdfs hdfs dfs -chown hdfs:hadoop /var/log
 sudo -u hdfs hdfs dfs -chmod 755 /var/log
 sudo -u hdfs hdfs dfs -mkdir /var/log/spark
 sudo -u hdfs hdfs dfs -chown spark:spark /var/log/spark
-sudo -u hdfs hdfs dfs -chmod 755 /var/log/spark
+sudo -u hdfs hdfs dfs -chmod 777 /var/log/spark
