@@ -27,3 +27,12 @@ sudo -u hdfs hdfs dfs -chmod 755 /mapred/system
 sudo -u hdfs hdfs dfs -mkdir /mapred/staging
 sudo -u hdfs hdfs dfs -chown mapred:mapred /mapred/staging
 sudo -u hdfs hdfs dfs -chmod 700 /mapred/staging
+sudo -u hdfs hdfs dfs -mkdir /var
+sudo -u hdfs hdfs dfs -chown hdfs:hadoop /var
+sudo -u hdfs hdfs dfs -chmod 755 /var
+sudo -u hdfs hdfs dfs -mkdir /var/log
+sudo -u hdfs hdfs dfs -chown hdfs:hadoop /var/log
+sudo -u hdfs hdfs dfs -chmod 755 /var/log
+sudo -u hdfs hdfs dfs -mkdir /var/log/spark
+sudo -u hdfs hdfs dfs -chown spark:spark /var/log/spark
+sudo -u hdfs hdfs dfs -chmod 755 /var/log/spark
