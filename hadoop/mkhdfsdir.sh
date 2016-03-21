@@ -12,6 +12,9 @@ sudo -u hdfs hdfs dfs -chmod 755 /user/mapred
 sudo -u hdfs hdfs dfs -mkdir /user/yarn
 sudo -u hdfs hdfs dfs -chown yarn:yarn /user/yarn
 sudo -u hdfs hdfs dfs -chmod 755 /user/yarn
+sudo -u hdfs hdfs dfs -mkdir /user/history
+sudo -u hdfs hdfs dfs -chown mapred:hadoop /user/history
+sudo -u hdfs hdfs dfs -chmod 1777 /user/history
 sudo -u hdfs hdfs dfs -mkdir /tmp
 sudo -u hdfs hdfs dfs -chown hdfs:hdfs /tmp
 sudo -u hdfs hdfs dfs -chmod 1777 /tmp
