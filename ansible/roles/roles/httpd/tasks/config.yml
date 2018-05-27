@@ -1,0 +1,9 @@
+- tasks: 
+  name: copy config file
+  template:
+    src: httpd.conf.j2
+    dest: /etc/httpd/conf/httpd.conf 
+    owner: root
+    group: root
+    mode: 644
+
